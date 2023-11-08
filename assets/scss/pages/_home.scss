@@ -1,4 +1,3 @@
-
 // style for home section by ilkin start
 #home {
     width: 100%;
@@ -98,7 +97,7 @@
                             display: flex;
                             justify-content: space-between;
                         }
-                        
+
                         hr {
                             bottom: -4px;
                             position: absolute;
@@ -116,7 +115,7 @@
                     margin: auto;
                     display: flex;
                     justify-content: space-between;
-                
+
 
 
                     .letters {
@@ -140,6 +139,7 @@
                             }
                         }
                     }
+
                     .name-of-bike {
                         background-color: #ff004e;
                         width: 300px;
@@ -152,9 +152,10 @@
                 }
             }
         }
-        
+
     }
 }
+
 // style for home section by ilkin end
 
 // responsive for section home by ilkin start
@@ -162,7 +163,7 @@
     #home {
         .carousel {
             .carousel-inner {
-                
+
                 .carousel-image {
                     height: 100%;
                     width: 100%;
@@ -180,7 +181,7 @@
                             height: 50%;
                             width: 100%;
                             backdrop-filter: blur(0px);
-                            
+
                             .partner {
                                 width: 100%;
 
@@ -193,16 +194,16 @@
                                 display: none;
                             }
                         }
-                        
+
                         .properties {
                             display: none;
                         }
-                        
+
                     }
                 }
             }
         }
-        
+
     }
 }
 
@@ -221,14 +222,15 @@
                         .properties {
                             display: none;
                         }
-                        
+
                     }
                 }
             }
         }
-        
+
     }
 }
+
 // responsive for section home by ilkin end
 
 
@@ -343,7 +345,8 @@
         a {
             font-size: 10px !important;
         }
-        span{
+
+        span {
             font-size: 5px !important;
         }
     }
@@ -358,8 +361,9 @@
         align-items: center;
 
         .newlaunch {
-          font-size: 10px;
+            font-size: 10px;
         }
+
         h2 {
             font-size: 25px !important;
         }
@@ -378,7 +382,7 @@
     position: relative;
     min-height: 950px;
     background-color: #ebe7e2;
-    
+
     .imgdiv {
         max-width: 60%;
         position: absolute;
@@ -386,7 +390,7 @@
         z-index: 1;
         opacity: 0.3;
     }
-    
+
     .imgdiv2 {
         max-width: 60%;
         position: absolute;
@@ -396,7 +400,7 @@
         opacity: 0.3;
         transform: scaleX(-1);
     }
-    
+
 
     #smartE-bikebox {
         min-height: 800px;
@@ -408,7 +412,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        
+
         .smarttop {
             width: 100%;
             height: 500px;
@@ -416,45 +420,47 @@
             flex-direction: column;
             justify-content: center;
             gap: 60px;
-            
+
             h2 {
                 font-size: 60px;
                 text-align: center;
             }
 
             .smartcards {
-                
+
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 20px 30px;
-                
+                z-index: 2;
+
                 .cardbox {
 
                     margin-left: auto;
                     display: flex;
-                    
+
                     h6 {
                         font-size: 30px;
                     }
-                    
+
                     p {
                         font-size: 20px;
                     }
-                    
+
                     a {
                         font-size: 15px;
                     }
                 }
-                
+
                 .smartcard {
-                    
+
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
                     padding-left: 20px;
                     background-color: #dcd8cd;
-                    
+
+
                     button {
                         background-color: #dcd8cd;
                         border: none;
@@ -463,12 +469,12 @@
                         text-align: center;
                         cursor: pointer;
                     }
-                    
+
                     button:hover {
                         cursor: pointer;
                     }
                 }
-                
+
                 .swipebuttons {
                     display: flex;
                     justify-content: center;
@@ -480,19 +486,23 @@
 
 
         .smartbottom {
+            z-index: 1;
+            text-align: center;
+
             h3 {
                 font-size: 40px;
             }
-            
+
             p {
                 font-size: 20px;
             }
-            
+
             .bottombox {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: center;
+                width: 80%;
+                margin: auto;
                 gap: 20px;
 
                 .bottomboxes {
