@@ -1,0 +1,350 @@
+// edited By Ali start 
+
+// header start 
+
+header {
+    .navbar_rider {
+        background: rgba(128, 128, 128, 0.276);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid gray;
+        z-index: 2;
+        position: fixed;
+
+        .logoAndBar {
+            display: flex;
+            min-width: 54%;
+            max-height: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            #navbar_bar_close_icon {
+                font-size: 40px;
+                margin-left: 20px;
+                color: gray;
+                cursor: pointer;
+                transition: 0.2s;
+                display: none;
+
+            }
+
+            #navbar_bar_close_icon:hover {
+                color: #ff004e;
+                transition: 0.2s;
+
+            }
+
+            #navbar_bar_icon {
+                font-size: 40px;
+                margin-left: 20px;
+                color: gray;
+                cursor: pointer;
+                transition: 0.2s;
+
+
+            }
+
+            #navbar_bar_icon:hover {
+                color: #ff004e;
+                transition: 0.2s;
+            }
+
+            .logo {
+                img {
+                    max-width: 94px;
+                }
+            }
+        }
+
+        .searchAndBAsket {
+            min-width: 45%;
+            display: flex;
+            justify-content: end;
+            gap: 30px;
+            .search_box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                max-height: 60%;
+                padding: 0px 10px 0px 30px;
+                margin-top: 10px;
+                border-bottom: 2px solid gray;
+
+
+
+                .navbar_search {
+                    border: none;
+                    background-color: transparent;
+
+
+                }
+
+                a {
+                    color: gray;
+
+                }
+
+                a:hover {
+                    color: #ff004e;
+                    text-decoration: none;
+
+                }
+
+                .navbar_search:focus {
+                    outline: none;
+                }
+            }
+
+        }
+
+        .navbar_basket {
+            margin-right: 30px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            i {
+                color: #ff004e;
+                font-size: 25px;
+            }
+
+            .basket_number {
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                color: #ff004e;
+                position: absolute;
+                bottom: 10px;
+                left: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+    }
+
+
+
+}
+
+// header end 
+
+// line started 
+
+.line {
+    margin-top: -2.5px;
+    width: 150px;
+    height: 3.5px;
+    background: linear-gradient(0.25turn, rgba(128, 128, 128, 0.276), #ff004e);
+    ;
+    position: relative;
+    animation: lineH 20s linear infinite;
+    border-radius: 92% 4% 4% 93% / 55% 41% 48% 45%;
+    position: fixed;
+    top: 80px;
+    z-index: 2;
+}
+
+@keyframes lineH {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 90%;
+    }
+
+}
+
+// line end 
+
+// header responsive started
+
+@media screen and (max-width: 917px) {
+    header {
+        .navbar_rider {
+            .searchAndBAsket {
+                min-width: 0%;
+                display: flex;
+                justify-content: end;
+                gap: 10px;
+                .search_box {
+                    padding: 0px;
+                    max-width: 30%;
+
+                    .navbar_search {
+                        display: none;
+                    }
+                }
+            }
+            .navbar_basket {
+                .basket_number {
+                   bottom: 0px;
+    
+                }
+            }
+        }
+
+        .line {
+            display: none;
+        }
+    }
+}
+
+// header responsive end
+
+// hamburger clicked open navbar start
+
+.click_bar {
+    background-color: rgba(128, 128, 128, 0.207);
+    width: 25%;
+    margin-top: -2px;
+    height: 89.2vh;
+    opacity: 0;
+    padding: 45px 40px 0px 40px;
+    z-index: 2;
+    position: fixed;
+    bottom: 0px;
+
+    .click_box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .navbar_up {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            line-height: 3;
+
+            #homePage {
+                color: #ff004e;
+            }
+
+            li {
+                cursor: pointer;
+
+                a {
+                    color: gray;
+                }
+            }
+
+            li:hover {
+               padding: 0px 10px ;
+                background-color: rgba(128, 128, 128, 0.207);
+
+                a {
+                    color: #ff004e;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .nabar_down {
+            width: 60%;
+
+            .navbar_login {
+                font-size: 20px;
+                
+
+                a {
+                    color: gray;
+                    text-decoration: none;
+                }
+            }
+
+            .navbar_social_media {
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+                padding: 20px 0px;
+                cursor: pointer;
+                flex-wrap: wrap;
+                
+
+
+                div {
+                    height: 40px;
+                    width: 40px;
+                    border: 2px solid gray;
+                    border-radius: 50%;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        color: gray;
+                    }
+
+                }
+
+                div:hover {
+                    border: 2px solid #ff004e;
+
+                    i {
+                        color: #ff004e;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// hamburger clicked open navbar end
+
+// hamburger clicked responsive start
+
+@media screen and (max-width: 917px) {
+    .click_bar {
+        width: 70%;
+    height: 87.7vh;
+
+        .click_box {
+            .nabar_down {
+                .navbar_social_media {
+                    font-size: 15px;
+                    gap: 2px;
+                    max-width: 60%;
+
+
+                    div {
+                        height: 30px;
+                        width: 30px;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+// hamburger clicked responsive end
+
+// page blur started 
+
+.page_blur {
+    height: 89vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.06);
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 80px;
+}
+
+// page blur end 
+
+// edited By Ali end 
