@@ -6,6 +6,309 @@
   list-style: none;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header .navbar_rider {
+  background: rgba(128, 128, 128, 0.276);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  z-index: 2;
+  position: fixed;
+}
+header .navbar_rider .logoAndBar {
+  display: flex;
+  min-width: 54%;
+  max-height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar_rider .logoAndBar #navbar_bar_close_icon {
+  font-size: 40px;
+  margin-left: 20px;
+  color: gray;
+  cursor: pointer;
+  transition: 0.2s;
+  display: none;
+}
+header .navbar_rider .logoAndBar #navbar_bar_close_icon:hover {
+  color: #ff004e;
+  transition: 0.2s;
+}
+header .navbar_rider .logoAndBar #navbar_bar_icon {
+  font-size: 40px;
+  margin-left: 20px;
+  color: gray;
+  cursor: pointer;
+  transition: 0.2s;
+}
+header .navbar_rider .logoAndBar #navbar_bar_icon:hover {
+  color: #ff004e;
+  transition: 0.2s;
+}
+header .navbar_rider .logoAndBar .logo img {
+  max-width: 94px;
+}
+header .navbar_rider .searchAndBAsket {
+  min-width: 45%;
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+header .navbar_rider .searchAndBAsket .search_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-height: 60%;
+  padding: 0px 10px 0px 30px;
+  margin-top: 10px;
+  border-bottom: 2px solid gray;
+}
+header .navbar_rider .searchAndBAsket .search_box .navbar_search {
+  border: none;
+  background-color: transparent;
+}
+header .navbar_rider .searchAndBAsket .search_box a {
+  color: gray;
+}
+header .navbar_rider .searchAndBAsket .search_box a:hover {
+  color: #ff004e;
+  text-decoration: none;
+}
+header .navbar_rider .searchAndBAsket .search_box .navbar_search:focus {
+  outline: none;
+}
+header .navbar_rider .navbar_basket {
+  margin-right: 30px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+header .navbar_rider .navbar_basket i {
+  color: #ff004e;
+  font-size: 25px;
+}
+header .navbar_rider .navbar_basket .basket_number {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  color: #ff004e;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  margin-top: -2.5px;
+  width: 150px;
+  height: 3.5px;
+  background: linear-gradient(0.25turn, rgba(128, 128, 128, 0.276), #ff004e);
+  position: relative;
+  animation: lineH 20s linear infinite;
+  border-radius: 92% 4% 4% 93%/55% 41% 48% 45%;
+  position: fixed;
+  top: 80px;
+  z-index: 2;
+}
+
+@keyframes lineH {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+@media screen and (max-width: 917px) {
+  header .navbar_rider .searchAndBAsket {
+    min-width: 0%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+  header .navbar_rider .searchAndBAsket .search_box {
+    padding: 0px;
+    max-width: 30%;
+  }
+  header .navbar_rider .searchAndBAsket .search_box .navbar_search {
+    display: none;
+  }
+  header .navbar_rider .navbar_basket .basket_number {
+    bottom: 0px;
+  }
+  header .line {
+    display: none;
+  }
+}
+.click_bar {
+  background-color: rgba(128, 128, 128, 0.207);
+  width: 25%;
+  margin-top: -2px;
+  height: 89.2vh;
+  opacity: 0;
+  padding: 45px 40px 0px 40px;
+  z-index: 2;
+  position: fixed;
+  bottom: 0px;
+}
+.click_bar .click_box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.click_bar .click_box .navbar_up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+}
+.click_bar .click_box .navbar_up #homePage {
+  color: #ff004e;
+}
+.click_bar .click_box .navbar_up li {
+  cursor: pointer;
+}
+.click_bar .click_box .navbar_up li a {
+  color: gray;
+}
+.click_bar .click_box .navbar_up li:hover {
+  padding: 0px 10px;
+  background-color: rgba(128, 128, 128, 0.207);
+}
+.click_bar .click_box .navbar_up li:hover a {
+  color: #ff004e;
+  text-decoration: none;
+}
+.click_bar .click_box .nabar_down {
+  width: 60%;
+}
+.click_bar .click_box .nabar_down .navbar_login {
+  font-size: 20px;
+}
+.click_bar .click_box .nabar_down .navbar_login a {
+  color: gray;
+  text-decoration: none;
+}
+.click_bar .click_box .nabar_down .navbar_social_media {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 20px 0px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.click_bar .click_box .nabar_down .navbar_social_media div {
+  height: 40px;
+  width: 40px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.click_bar .click_box .nabar_down .navbar_social_media div i {
+  color: gray;
+}
+.click_bar .click_box .nabar_down .navbar_social_media div:hover {
+  border: 2px solid #ff004e;
+}
+.click_bar .click_box .nabar_down .navbar_social_media div:hover i {
+  color: #ff004e;
+}
+
+@media screen and (max-width: 917px) {
+  .click_bar {
+    width: 70%;
+    height: 87.7vh;
+  }
+  .click_bar .click_box .nabar_down .navbar_social_media {
+    font-size: 15px;
+    gap: 2px;
+    max-width: 60%;
+  }
+  .click_bar .click_box .nabar_down .navbar_social_media div {
+    height: 30px;
+    width: 30px;
+  }
+}
+.page_blur {
+  height: 89vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.06);
+  display: none;
+  z-index: -1;
+  position: absolute;
+  top: 80px;
+}
+
 #smartE-bike {
   width: 100%;
   position: relative;
