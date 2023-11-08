@@ -1,1 +1,201 @@
-/*# sourceMappingURL=main.css.map */
+.pink-button {
+  padding: 5px 15px;
+  background-color: #ff004e;
+  color: white;
+  border-color: #ff004e;
+  transition: 0.5s;
+}
+.pink-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+  transition: 0.5s;
+}
+
+.white-button {
+  padding: 5px 15px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.white-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+  transition: 0.5s;
+}
+
+.black-button {
+  padding: 5px 15px;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.black-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgb(255, 252, 252);
+  transition: 0.5s;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+}
+#home .carousel-item .first {
+  background-image: url("https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_1_1.jpg?v=1670846020");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#home .carousel {
+  font-family: var(--font-heading-family);
+}
+#home .carousel .carousel-inner .bg-img-1 {
+  background-image: url("https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_1_1.jpg?v=1670846020");
+}
+#home .carousel .carousel-inner .bg-img-2 {
+  background-image: url("https://dt-ezyrider.myshopify.com/cdn/shop/files/slide-2.jpg?v=1677565134");
+}
+#home .carousel .carousel-inner .bg-img-3 {
+  background-image: url("https://dt-ezyrider.myshopify.com/cdn/shop/files/slide-3.jpg?v=1677565134");
+}
+#home .carousel .carousel-inner .carousel-image {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home .carousel .carousel-inner .container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+#home .carousel .carousel-inner .container:hover .home-texts {
+  backdrop-filter: blur(0px);
+  transition: 0.4s;
+}
+#home .carousel .carousel-inner .container .home-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+#home .carousel .carousel-inner .container .home-texts .partner {
+  width: 60%;
+  backdrop-filter: blur(10px);
+}
+#home .carousel .carousel-inner .container .home-texts .partner:hover {
+  backdrop-filter: blur(0px);
+  transition: 0.4s;
+}
+#home .carousel .carousel-inner .container .home-texts .partner :first-child {
+  font-size: 15px;
+  color: #ff004e;
+  font-family: var(--font-body-family);
+}
+#home .carousel .carousel-inner .container .home-texts .partner h1 {
+  font-family: "Alice", serif;
+  font-weight: bold;
+  margin: 30px 0;
+}
+#home .carousel .carousel-inner .container .home-texts .partner :nth-child(3) {
+  width: 60%;
+  font-family: "Gruppo", sans-serif;
+}
+#home .carousel .carousel-inner .container .home-texts .number {
+  width: 10%;
+  height: 50px;
+  position: relative;
+  transform: rotate(90deg);
+  margin-left: 40px;
+}
+#home .carousel .carousel-inner .container .home-texts .number .number-of-image {
+  display: flex;
+  justify-content: space-between;
+}
+#home .carousel .carousel-inner .container .home-texts .number hr {
+  bottom: -4px;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(57, 57, 57);
+}
+#home .carousel .carousel-inner .container .properties {
+  width: 100%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#home .carousel .carousel-inner .container .properties .letters {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .carousel .carousel-inner .container .properties .letters span,
+#home .carousel .carousel-inner .container .properties .letters i {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#home .carousel .carousel-inner .container .properties .letters span:hover,
+#home .carousel .carousel-inner .container .properties .letters i:hover {
+  background-color: rgb(192, 191, 191);
+  transition: 0.5s;
+}
+#home .carousel .carousel-inner .container .properties .name-of-bike {
+  background-color: #ff004e;
+  width: 300px;
+  padding: 30px;
+  color: white;
+  box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
+}
+
+@media screen and (max-width: 678px) {
+  #home .carousel .carousel-inner .carousel-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+  #home .carousel .carousel-inner .carousel-item .container {
+    display: flex;
+    align-items: flex-end;
+  }
+  #home .carousel .carousel-inner .carousel-item .container .home-texts {
+    height: 50%;
+    width: 100%;
+    backdrop-filter: blur(0px);
+  }
+  #home .carousel .carousel-inner .carousel-item .container .home-texts .partner {
+    width: 100%;
+  }
+  #home .carousel .carousel-inner .carousel-item .container .home-texts .partner :nth-child(3) {
+    display: none;
+  }
+  #home .carousel .carousel-inner .carousel-item .container .home-texts .number {
+    display: none;
+  }
+  #home .carousel .carousel-inner .carousel-item .container .properties {
+    display: none;
+  }
+}
+@media screen and (min-width: 679px) and (max-width: 992px) {
+  #home .carousel .carousel-inner .carousel-item .container .home-texts .number {
+    display: none;
+  }
+  #home .carousel .carousel-inner .carousel-item .container .properties {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
