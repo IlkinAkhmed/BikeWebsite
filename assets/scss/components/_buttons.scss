@@ -1,11 +1,13 @@
+
 .pink-button{
-    padding: 5px 15px;
+    padding: 10px 15px;
     background-color: #ff004e;
     color: white;
     border-color: #ff004e;
     transition: 0.5s;
 
     cursor: pointer;
+    font-family: var(--font-heading-family);
     &:hover{
         background-color: black;
         color: white;
@@ -15,10 +17,11 @@
     
 }
 .white-button{
-    padding: 5px 15px;
+    padding: 10px 15px;
     box-sizing: border-box;
     transition: 0.5s;
     cursor: pointer;
+    font-family: var(--font-heading-family);
     &:hover{
         background-color: black;
         color: white;
@@ -28,12 +31,13 @@
 }
 .black-button{
     
-    padding: 5px 15px;
+    padding: 10px 15px;
     background-color: black;
     color: white;
     transition: 0.5s;
     cursor: pointer;
 
+    font-family: var(--font-heading-family);
     &:hover{
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
