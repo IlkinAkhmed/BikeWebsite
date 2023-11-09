@@ -1440,7 +1440,7 @@ html {
     height: 0;
   }
 }
-@media screen and (max-width: 917px) and (max-width: 917px) {
+@media screen and (max-width: 917px) {
   #eRiders #eRider_up {
     max-width: 100%;
   }
@@ -1663,8 +1663,6 @@ html {
   #eRiders #eRider_down #wrapper #carousel::-webkit-scrollbar {
     height: 0;
   }
-}
-@media screen and (max-width: 917px) {
   #accessories {
     padding: 100px 0;
     display: flex;
