@@ -37,6 +37,181 @@
   transition: 0.5s;
 }
 
+#footer {
+  background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_7_1_79f36a61-c447-43a9-b009-0c763dd719be.jpg?v=1670050917);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 70vh;
+  padding-top: 30px;
+}
+#footer .footertop {
+  height: auto;
+  padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+}
+#footer .footertop .inputsfooter {
+  max-width: 400px;
+}
+#footer .footertop .inputsfooter input {
+  width: 300px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+#footer .footertop .inputsfooter button {
+  color: #ff004e;
+  background-color: transparent;
+  border: none;
+  transition: 0.2s;
+}
+#footer .footertop .inputsfooter button:hover {
+  color: white;
+  cursor: pointer;
+}
+#footer .footertop .inputsfooter i {
+  color: white;
+  transition: 0.2s;
+}
+#footer .footertop .inputsfooter button:hover i {
+  color: #ff004e;
+  transition: 0.2s;
+  transform: rotate(45deg);
+}
+#footer .footertop img {
+  padding-top: 20px;
+  max-width: 150px;
+}
+#footer .footertop li {
+  font-size: 15px;
+}
+#footer .footertop .footericons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+#footer .footertop .footericons .iconcircle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #8e8e8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+#footer .footertop .footericons .iconcircle:hover {
+  color: #ff004e;
+  border: 2px solid #ff004e;
+  cursor: pointer;
+}
+#footer .footertop h6 {
+  font-size: 20px;
+}
+#footer .footertop .header {
+  font-size: 30px;
+}
+#footer .footertop .pages {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#footer .footertop .doublefooter {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+#footer .footertop .footerbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 50vh;
+}
+#footer .footertop .footerbox ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#footer .footertop .footerbox ul li a {
+  color: white;
+  text-decoration: none;
+}
+#footer .footertop .footerbox .contact {
+  margin-bottom: 20px;
+  height: 30vh;
+}
+#footer .aboutbox {
+  gap: 20px;
+}
+#footer .footerbottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  border-top: 2px solid #8e8e8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footerbottom .bottombox {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .footerbottom .bottombox span {
+  color: white;
+}
+#footer .footerbottom .bottombox span a {
+  color: white;
+  transition: 0.4s;
+}
+#footer .footerbottom .bottombox span a:hover {
+  cursor: pointer;
+  color: #ff004e;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 995px) {
+  #footer .footertop li {
+    font-size: 10px;
+  }
+  #footer .footertop h6 {
+    font-size: 15px;
+  }
+  #footer .footertop .iconcircle {
+    font-size: 10px;
+  }
+  #footer .footertop .header {
+    font-size: 20px;
+  }
+  .footertop img {
+    display: none;
+  }
+  .footerbox {
+    text-align: center;
+  }
+  .footerbottom img {
+    width: 100px;
+  }
+  .footerbottom {
+    justify-content: center;
+    align-items: center;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -141,11 +316,16 @@ header .navbar_rider .navbar_basket .basket_number {
   border-radius: 20px;
   color: #ff004e;
   position: absolute;
-  bottom: 10px;
+  bottom: 3px;
   left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.6s;
+}
+header .navbar_rider .navbar_basket:hover .basket_number {
+  left: 30px;
+  transition: 0.6s;
 }
 
 .line {
@@ -158,7 +338,7 @@ header .navbar_rider .navbar_basket .basket_number {
   border-radius: 92% 4% 4% 93%/55% 41% 48% 45%;
   position: fixed;
   top: 80px;
-  z-index: 4;
+  z-index: 6;
 }
 
 @keyframes lineH {
@@ -170,6 +350,10 @@ header .navbar_rider .navbar_basket .basket_number {
   }
 }
 @media screen and (max-width: 917px) {
+  header .navbar_rider {
+    position: relative;
+    width: 100%;
+  }
   header .navbar_rider .searchAndBAsket {
     min-width: 0%;
     display: flex;
@@ -193,15 +377,15 @@ header .navbar_rider .navbar_basket .basket_number {
 .click_bar {
   background-color: #ebe7e2;
   width: 25%;
-  height: 89vh;
+  height: 90vh;
   overflow: hidden;
   display: none;
   padding: 45px 40px 0px 40px;
-  z-index: 999;
   opacity: 1;
   position: fixed;
   left: 0;
   top: 80px;
+  z-index: 5;
 }
 .click_bar .click_box {
   height: 100%;
@@ -272,6 +456,8 @@ header .navbar_rider .navbar_basket .basket_number {
 
 @media screen and (max-width: 917px) {
   .click_bar {
+    position: absolute;
+    top: 80px;
     width: 70%;
     height: 87.7vh;
   }
@@ -296,6 +482,17 @@ header .navbar_rider .navbar_basket .basket_number {
   top: 80px;
 }
 
+@media screen and (max-width: 917px) {
+  .page_blur {
+    height: 89vh;
+    right: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    z-index: 5;
+  }
+}
 #home {
   width: 100%;
   height: 100vh;
@@ -331,7 +528,8 @@ header .navbar_rider .navbar_basket .basket_number {
   padding: 20px;
 }
 #home .carousel .carousel-inner .container:hover .home-texts {
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
   transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts {
@@ -340,15 +538,18 @@ header .navbar_rider .navbar_basket .basket_number {
   justify-content: space-between;
   height: 80%;
   margin: auto;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts .partner {
   width: 60%;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 #home .carousel .carousel-inner .container .home-texts .partner:hover {
-  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
   transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts .partner :first-child {
@@ -435,7 +636,8 @@ header .navbar_rider .navbar_basket .basket_number {
   #home .carousel .carousel-inner .carousel-item .container .home-texts {
     height: 50%;
     width: 100%;
-    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
   }
   #home .carousel .carousel-inner .carousel-item .container .home-texts .partner {
     width: 100%;
@@ -471,7 +673,7 @@ header .navbar_rider .navbar_basket .basket_number {
 #banner-media .bannerbox {
   margin-right: 150px;
   width: 50%;
-  height: 60%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -490,20 +692,19 @@ header .navbar_rider .navbar_basket .basket_number {
   font-size: 16px;
 }
 #banner-media .bannerbox .bottombuttons {
-  width: 50%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #banner-media .bannerbox .bottombuttons #button1 {
   width: 200px;
   height: 40px;
-  border: 1px solid black;
   transition: 0.4s;
 }
 #banner-media .bannerbox .bottombuttons #button1:hover {
-  background-color: black;
   color: white;
   transition: 0.4s;
+  background-color: black;
 }
 #banner-media .bannerbox .bottombuttons #button2 {
   width: 200px;
@@ -520,7 +721,7 @@ header .navbar_rider .navbar_basket .basket_number {
 
 @media screen and (max-width: 991px) {
   .bannerbox {
-    margin: auto;
+    margin: auto !important;
   }
   .bannerbox .bottombuttons {
     font-size: 10px;
@@ -685,4 +886,142 @@ header .navbar_rider .navbar_basket .basket_number {
   .imgdiv img {
     width: 40%;
   }
+}
+.active {
+  display: flex !important;
+}
+
+#login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebe7e2;
+}
+#login .loginbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  height: 50%;
+}
+#login .loginbox h1 {
+  text-align: center;
+  font-size: 60px;
+}
+#login .loginbox input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 15%;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#login .loginbox a {
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  font-size: 25px;
+}
+#login .loginbox button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: #ff004e;
+  border: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+#login .loginbox button:hover {
+  background-color: black;
+  transition: 0.4s;
+}
+#login .loginbox .createaccount {
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .loginbox h1 {
+    font-size: 40px !important;
+  }
+  .loginbox input {
+    width: 80% !important;
+    height: 10% !important;
+    font-size: 20px !important;
+  }
+  .loginbox a {
+    font-size: 15px !important;
+  }
+  .loginbox button {
+    width: 100px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+  }
+  .loginbox .createaccount {
+    font-size: 10px !important;
+  }
+}
+#search {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+#search .searchbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+#search .searchbox .searchbar {
+  position: relative;
+  width: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search .searchbox .fa-circle-xmark {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
+#search .searchbox h1 {
+  font-size: 50px;
+  color: white;
+}
+#search .searchbox input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 3px solid #ff004e;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+#search .searchbox .fa-magnifying-glass {
+  position: absolute;
+  right: 0;
+  color: white;
+  font-size: 50px;
 }/*# sourceMappingURL=main.css.map */

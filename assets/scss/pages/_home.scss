@@ -252,7 +252,7 @@
     .bannerbox {
         margin-right: 150px;
         width: 50%;
-        height: 60%;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -274,21 +274,20 @@
         }
 
         .bottombuttons {
-            width: 50%;
+            width: 80%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             #button1 {
                 width: 200px;
                 height: 40px;
-                border: 1px solid black;
                 transition: 0.4s;
             }
 
             #button1:hover {
-                background-color: black;
                 color: white;
                 transition: 0.4s;
+                background-color: black;
 
             }
 
@@ -319,7 +318,7 @@
 
 @media screen and (max-width: 991px) {
     .bannerbox {
-        margin: auto;
+        margin: auto !important;
 
         .bottombuttons {
             font-size: 10px;
@@ -546,5 +545,8 @@
 }
 
 
+.active {
+    display: flex !important;
+}
 
 // Ahmad Edited End
