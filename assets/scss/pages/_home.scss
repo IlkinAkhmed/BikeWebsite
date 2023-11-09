@@ -34,6 +34,7 @@ html {
 
 
 // style for home section by ilkin start
+
 #home {
     width: 100%;
     height: 100vh;
@@ -190,6 +191,7 @@ html {
 // style for home section by ilkin end
 
 // responsive for section home by ilkin start
+
 @media screen and (max-width: 678px) {
     #home {
         .carousel {
@@ -279,6 +281,7 @@ html {
     min-height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
 
     .bannerbox {
         margin-right: 150px;
@@ -585,8 +588,10 @@ html {
 // section created by Ali start 
 
 // city rider section start 
+
 #cityRider {
     width: 100%;
+
     #cityRider-up {
         background-color: #dcd8cd;
         min-height: 90vh;
@@ -598,6 +603,9 @@ html {
             min-width: 50%;
             min-height: 90vh;
             display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             flex-direction: column;
             justify-content: end;
 
@@ -787,6 +795,9 @@ html {
             background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/AdobeStock_287721050.jpg?v=1668754912);
             min-width: 50%;
             min-height: 90vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -871,6 +882,302 @@ html {
     }
 }
 
+// city rider section end 
+
+
+
+
+
+@media screen and (max-width: 917px) {
+    #eRiders {
+
+        #eRider_up {
+            max-width: 100%;
+            p{
+                display: none;
+            }
+            h1 {
+                position: absolute;
+                top: 100px;
+                font-size: 50px;
+                z-index: 1;
+            }
+
+            #wrapper {
+                max-width: 65.5%;
+
+                #prev,
+                #next {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    border: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    position: absolute;
+                }
+
+
+                #prev {
+                    top: 65%;
+                    left: 15px;
+                    font-size: 40px;
+                    background-color: transparent;
+                    color: gray;
+                    border: none;
+                }
+
+                #prev:focus {
+                    outline: 0;
+                }
+
+                #next {
+                    top: 65%;
+                    right: 15px;
+                    font-size: 40px;
+                    background-color: transparent;
+                    color: gray;
+
+                }
+
+                #next:focus {
+                    outline: 0;
+                }
+
+                #carousel {
+                    overflow: auto;
+                    scroll-behavior: smooth;
+                    scrollbar-width: none;
+
+                    #content {
+                        display: grid;
+                        grid-auto-flow: column;
+                        margin: auto;
+                        box-sizing: border-box;
+
+                        .eRider_img_1 {
+                            overflow: hidden;
+                            width: 300px;
+                            height: 300px;
+                            transition: 0.4s;
+                            position: relative;
+
+                            .erider_hover {
+                                background-color: rgba(255, 0, 76, 0.6);
+                                width: 300px;
+                                height: 300px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                visibility: hidden;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+
+
+                                h3 {
+                                    font-size: 40px;
+                                    color: white;
+                                }
+
+                                .eRider_hover_btn {
+                                    height: 40px;
+                                    width: 180px;
+                                    background-color: black;
+                                    opacity: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: white;
+                                    text-decoration: none;
+                                }
+
+                                .eRider_hover_btn:hover {
+                                    background-color: white;
+                                    color: black;
+                                }
+
+                            }
+                        }
+
+                        .eRider_img_1:hover {
+                            .erider_hover {
+                                visibility: visible;
+                                transition: 0.4s;
+                                z-index: 2;
+                            }
+
+                            .item {
+
+                                transition: 0.4s;
+                                transform: scale(1.1);
+
+                            }
+
+                        }
+
+
+                        .item {
+                            width: 300px;
+                            height: 300px;
+                            transition: 0.4s;
+
+                        }
+
+
+
+
+                    }
+                }
+
+                #carousel::-webkit-scrollbar {
+                    height: 0;
+                }
+            }
+        }
+
+        #eRider_down {
+            max-width: 100%;
+
+            #wrapper {
+                max-width: 65.5%;
+
+                #prev,
+                #next {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    border: none;
+                    padding: 8px;
+                    cursor: pointer;
+                    position: absolute;
+                }
+
+
+                #prev {
+                    top: 65%;
+                    left: 15px;
+                    font-size: 40px;
+                    background-color: transparent;
+                    color: gray;
+                    border: none;
+                }
+
+                #prev:focus {
+                    outline: 0;
+                }
+
+                #next {
+                    top: 65%;
+                    right: 15px;
+                    font-size: 40px;
+                    background-color: transparent;
+                    color: gray;
+
+                }
+
+                #next:focus {
+                    outline: 0;
+                }
+
+                #carousel {
+                    overflow: auto;
+                    scroll-behavior: smooth;
+                    scrollbar-width: none;
+
+                    #content {
+                        display: grid;
+                        grid-auto-flow: column;
+                        margin: auto;
+                        box-sizing: border-box;
+
+                        .eRider_img_1 {
+                            overflow: hidden;
+                            width: 300px;
+                            height: 300px;
+                            transition: 0.4s;
+                            position: relative;
+
+                            .erider_hover {
+                                background-color: rgba(255, 0, 76, 0.6);
+                                width: 300px;
+                                height: 300px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                visibility: hidden;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+
+
+                                h3 {
+                                    font-size: 40px;
+                                    color: white;
+                                }
+
+                                .eRider_hover_btn {
+                                    height: 40px;
+                                    width: 180px;
+                                    background-color: black;
+                                    opacity: 1;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: white;
+                                    text-decoration: none;
+                                }
+
+                                .eRider_hover_btn:hover {
+                                    background-color: white;
+                                    color: black;
+                                }
+
+                            }
+                        }
+
+                        .eRider_img_1:hover {
+                            .erider_hover {
+                                visibility: visible;
+                                transition: 0.4s;
+                                z-index: 2;
+                            }
+
+                            .item {
+
+                                transition: 0.4s;
+                                transform: scale(1.1);
+
+                            }
+
+                        }
+
+
+                        .item {
+                            width: 300px;
+                            height: 300px;
+                            transition: 0.4s;
+
+                        }
+
+
+
+
+                    }
+                }
+
+                #carousel::-webkit-scrollbar {
+                    height: 0;
+                }
+            }
+        }
+    }
+
+}
 
 
 @media screen and (max-width: 917px) {
@@ -885,10 +1192,453 @@ html {
         }
     }
 
-
+}
 
 
 // horizontal pink carousel style start by ilkin
+
+
+
+
+
+
+
+
+// section created by Ali end 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------
+// horizontal pink carousel style end by ilkin
+
+
+
+// ACCESSORIES section carousel style by ilkin start
+
+
+
+#eRiders {
+    width: 100%;
+
+    #eRider_up {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+        background-color: #dcd8cd;
+
+        .background-text {
+            text-align: center;
+            width: 100%;
+            opacity: 0.1;
+            color: gray;
+            font-size: 150px;
+        }
+
+        h1 {
+            text-align: center;
+            position: absolute;
+            top: 100px;
+            font-size: 50px;
+            z-index: 1;
+        }
+
+        #wrapper {
+            width: 90%;
+            margin: auto;
+
+            #prev,
+            #next {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+                position: absolute;
+            }
+
+
+            #prev {
+                top: 60%;
+                left: 30px;
+                font-size: 40px;
+                background-color: transparent;
+                color: gray;
+                border: none;
+            }
+
+            #prev:focus {
+                outline: 0;
+            }
+
+            #next {
+                top: 60%;
+                right: 30px;
+                font-size: 40px;
+                background-color: transparent;
+                color: gray;
+
+            }
+
+            #next:focus {
+                outline: 0;
+            }
+
+            #carousel {
+                overflow: auto;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+
+                #content {
+                    display: grid;
+                    grid-auto-flow: column;
+                    margin: auto;
+                    box-sizing: border-box;
+
+                    .eRider_img_1 {
+                        overflow: hidden;
+                        width: 450px;
+                        height: 450px;
+                        transition: 0.4s;
+                        position: relative;
+
+                        .erider_hover {
+                            background-color: rgba(255, 0, 76, 0.6);
+                            width: 450px;
+                            height: 450px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+
+                            h3 {
+                                font-size: 40px;
+                                color: white;
+                            }
+
+                            .eRider_hover_btn {
+                                height: 40px;
+                                width: 180px;
+                                background-color: black;
+                                opacity: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: white;
+                                text-decoration: none;
+                            }
+
+                            .eRider_hover_btn:hover {
+                                background-color: white;
+                                color: black;
+                            }
+
+                        }
+                    }
+
+                    .eRider_img_1:hover {
+                        .erider_hover {
+                            visibility: visible;
+                            transition: 0.4s;
+                            z-index: 2;
+                        }
+
+                        .item {
+
+                            transition: 0.4s;
+                            transform: scale(1.1);
+
+                        }
+
+                    }
+
+
+                    .item {
+                        width: 450px;
+                        height: 450px;
+                        transition: 0.4s;
+
+                    }
+
+
+
+
+                }
+            }
+
+            #carousel::-webkit-scrollbar {
+                height: 0;
+            }
+        }
+    }
+
+    #eRider_down {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+
+        position: relative;
+        background-color: #dcd8cd;
+
+        #wrapper {
+            width: 90%;
+            margin: auto;
+
+            #prev,
+            #next {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
+                position: absolute;
+            }
+
+
+            #prev {
+                top: 50%;
+                left: 30px;
+                font-size: 40px;
+                background-color: transparent;
+                color: gray;
+                border: none;
+            }
+
+            #prev:focus {
+                outline: 0;
+            }
+
+            #next {
+                top: 50%;
+                right: 30px;
+                font-size: 40px;
+                background-color: transparent;
+                color: gray;
+
+            }
+
+            #next:focus {
+                outline: 0;
+            }
+
+            #carousel {
+                overflow: auto;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+
+                #content {
+                    display: grid;
+                    grid-auto-flow: column;
+                    margin: auto;
+                    box-sizing: border-box;
+
+                    .eRider_img_1 {
+                        overflow: hidden;
+                        width: 450px;
+                        height: 450px;
+                        transition: 0.4s;
+                        position: relative;
+
+                        .erider_hover {
+                            background-color: rgba(255, 0, 76, 0.6);
+                            width: 450px;
+                            height: 450px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+
+                            h3 {
+                                font-size: 40px;
+                                color: white;
+                            }
+
+                            .eRider_hover_btn {
+                                height: 40px;
+                                width: 180px;
+                                background-color: black;
+                                opacity: 1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: white;
+                                text-decoration: none;
+                            }
+
+                            .eRider_hover_btn:hover {
+                                background-color: white;
+                                color: black;
+                            }
+
+                        }
+                    }
+
+                    .eRider_img_1:hover {
+                        .erider_hover {
+                            visibility: visible;
+                            transition: 0.4s;
+                            z-index: 2;
+                        }
+
+                        .item {
+
+                            transition: 0.4s;
+                            transform: scale(1.1);
+
+                        }
+
+                    }
+
+
+                    .item {
+                        width: 450px;
+                        height: 450px;
+                        transition: 0.4s;
+
+                    }
+
+
+
+
+                }
+            }
+
+            #carousel::-webkit-scrollbar {
+                height: 0;
+            }
+        }
+    }
+}
+
+#accessories {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebe7e2;
+
+    .name {
+        padding-bottom: 50px;
+        width: 400px;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+        }
+    }
+
+    swiper-container {
+        width: 80%;
+        margin: auto;
+        height: 500px;
+        cursor: grab;
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background:#ebe7e2;
+            display: flex;
+            gap: 0;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+            .card {
+                background-color: #E5E1D8;
+
+                .image {
+                    height: 60%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        background-color: #E5E1D8;
+                        transition: 0.5s;
+                    }
+
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                        transition: 0.5s;
+                    }
+                }
+
+                .card-body {
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40%;
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+}
+
+
 
 #hr-carousel {
     padding: 100px 0;
@@ -968,734 +1718,6 @@ html {
 
 }
 
-
-
-
-
-
-// city rider section end 
-
-// section created by Ali end 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ----------------------------------------------
-
-
-
-#eRiders{
-
-#eRider_up {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-
-    position: relative;
-    background-color: #dcd8cd;
-
-    P {
-        color: gray;
-        font-size: 150px;
-        z-index: 0;
-        opacity: 0.1;
-    }
-
-    h1 {
-        text-align: center;
-        position: absolute;
-        top: 100px;
-        font-size: 50px;
-        z-index: 1;
-    }
-
-    #wrapper {
-        max-width: 88.9%;
-
-        #prev,
-        #next {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            border: none;
-            padding: 8px;
-            cursor: pointer;
-            position: absolute;
-        }
-
-
-        #prev {
-            top: 60%;
-            left: 30px;
-            font-size: 40px;
-            background-color: transparent;
-            color: gray;
-            border: none;
-        }
-
-        #prev:focus {
-            outline: 0;
-        }
-
-        #next {
-            top: 60%;
-            right: 30px;
-            font-size: 40px;
-            background-color: transparent;
-            color: gray;
-
-        }
-
-        #next:focus {
-            outline: 0;
-        }
-
-        #carousel {
-            overflow: auto;
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-
-            #content {
-                display: grid;
-                grid-auto-flow: column;
-                margin: auto;
-                box-sizing: border-box;
-
-                .eRider_img_1 {
-                    overflow: hidden;
-                    width: 450px;
-                    height: 450px;
-                    transition: 0.4s;
-                    position: relative;
-                    .erider_hover {
-                        background-color: rgba(255, 0, 76, 0.6);
-                        width: 450px;
-                        height: 450px;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        visibility: hidden;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-
-
-                        h3 {
-                            font-size: 40px;
-                            color: white;
-                        }
-
-                        .eRider_hover_btn {
-                            height: 40px;
-                            width: 180px;
-                            background-color: black;
-                            opacity: 1;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: white;
-                            text-decoration: none;
-                        }
-
-                        .eRider_hover_btn:hover {
-                            background-color: white;
-                            color: black;
-                        }
-
-                    }
-                }
-
-                .eRider_img_1:hover {
-                    .erider_hover {
-                        visibility: visible;
-                        transition: 0.4s;
-                        z-index: 2;
-                    }
-
-                    .item {
-
-                        transition: 0.4s;
-                        transform: scale(1.1);
-
-                    }
-
-                }
-
-
-                .item {
-                    width: 450px;
-                    height: 450px;
-                    transition: 0.4s;
-
-                }
-
-
-
-
-            }
-        }
-
-        #carousel::-webkit-scrollbar {
-            height: 0;
-        }
-    }
-}
-#eRider_down {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-
-    position: relative;
-    background-color: #dcd8cd;
-
-    #wrapper {
-        max-width: 88.9%;
-
-        #prev,
-        #next {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            border: none;
-            padding: 8px;
-            cursor: pointer;
-            position: absolute;
-        }
-
-
-        #prev {
-            top: 50%;
-            left: 30px;
-            font-size: 40px;
-            background-color: transparent;
-            color: gray;
-            border: none;
-        }
-
-        #prev:focus {
-            outline: 0;
-        }
-
-        #next {
-            top: 50%;
-            right: 30px;
-            font-size: 40px;
-            background-color: transparent;
-            color: gray;
-
-        }
-
-        #next:focus {
-            outline: 0;
-        }
-
-        #carousel {
-            overflow: auto;
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-
-            #content {
-                display: grid;
-                grid-auto-flow: column;
-                margin: auto;
-                box-sizing: border-box;
-
-                .eRider_img_1 {
-                    overflow: hidden;
-                    width: 450px;
-                    height: 450px;
-                    transition: 0.4s;
-                    position: relative;
-                    .erider_hover {
-                        background-color: rgba(255, 0, 76, 0.6);
-                        width: 450px;
-                        height: 450px;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        visibility: hidden;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-
-
-                        h3 {
-                            font-size: 40px;
-                            color: white;
-                        }
-
-                        .eRider_hover_btn {
-                            height: 40px;
-                            width: 180px;
-                            background-color: black;
-                            opacity: 1;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: white;
-                            text-decoration: none;
-                        }
-
-                        .eRider_hover_btn:hover {
-                            background-color: white;
-                            color: black;
-                        }
-
-                    }
-                }
-
-                .eRider_img_1:hover {
-                    .erider_hover {
-                        visibility: visible;
-                        transition: 0.4s;
-                        z-index: 2;
-                    }
-
-                    .item {
-
-                        transition: 0.4s;
-                        transform: scale(1.1);
-
-                    }
-
-                }
-
-
-                .item {
-                    width: 450px;
-                    height: 450px;
-                    transition: 0.4s;
-
-                }
-
-
-
-
-            }
-        }
-
-        #carousel::-webkit-scrollbar {
-            height: 0;
-        }
-    }
-}
-}
-
-
-
-@media screen and (max-width: 917px) {
-    #eRiders{
-  
-    #eRider_up {
-       max-width: 100%;
-    
-        P {
-            color: gray;
-            font-size: 150px;
-            z-index: 0;
-            opacity: 0.1;
-        }
-    
-        h1 {
-            position: absolute;
-            top: 100px;
-            font-size: 50px;
-            z-index: 1;
-        }
-    
-        #wrapper {
-            max-width: 65.5%;
-    
-            #prev,
-            #next {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                border: none;
-                padding: 8px;
-                cursor: pointer;
-                position: absolute;
-            }
-    
-    
-            #prev {
-                top: 65%;
-                left: 15px;
-                font-size: 40px;
-                background-color: transparent;
-                color: gray;
-                border: none;
-            }
-    
-            #prev:focus {
-                outline: 0;
-            }
-    
-            #next {
-                top: 65%;
-                right: 15px;
-                font-size: 40px;
-                background-color: transparent;
-                color: gray;
-    
-            }
-    
-            #next:focus {
-                outline: 0;
-            }
-    
-            #carousel {
-                overflow: auto;
-                scroll-behavior: smooth;
-                scrollbar-width: none;
-    
-                #content {
-                    display: grid;
-                    grid-auto-flow: column;
-                    margin: auto;
-                    box-sizing: border-box;
-    
-                    .eRider_img_1 {
-                        overflow: hidden;
-                        width: 300px;
-                        height: 300px;
-                        transition: 0.4s;
-                        position: relative;
-                        .erider_hover {
-                            background-color: rgba(255, 0, 76, 0.6);
-                            width: 300px;
-                            height: 300px;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            visibility: hidden;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 10px;
-    
-    
-                            h3 {
-                                font-size: 40px;
-                                color: white;
-                            }
-    
-                            .eRider_hover_btn {
-                                height: 40px;
-                                width: 180px;
-                                background-color: black;
-                                opacity: 1;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                color: white;
-                                text-decoration: none;
-                            }
-    
-                            .eRider_hover_btn:hover {
-                                background-color: white;
-                                color: black;
-                            }
-    
-                        }
-                    }
-    
-                    .eRider_img_1:hover {
-                        .erider_hover {
-                            visibility: visible;
-                            transition: 0.4s;
-                            z-index: 2;
-                        }
-    
-                        .item {
-    
-                            transition: 0.4s;
-                            transform: scale(1.1);
-    
-                        }
-    
-                    }
-    
-    
-                    .item {
-                        width: 300px;
-                        height: 300px;
-                        transition: 0.4s;
-    
-                    }
-    
-    
-    
-    
-                }
-            }
-    
-            #carousel::-webkit-scrollbar {
-                height: 0;
-            }
-        }
-    }
-    #eRider_down {
-        max-width: 100%;
-         #wrapper {
-             max-width: 65.5%;
-     
-             #prev,
-             #next {
-                 display: flex;
-                 justify-content: center;
-                 align-content: center;
-                 border: none;
-                 padding: 8px;
-                 cursor: pointer;
-                 position: absolute;
-             }
-     
-     
-             #prev {
-                 top: 65%;
-                 left: 15px;
-                 font-size: 40px;
-                 background-color: transparent;
-                 color: gray;
-                 border: none;
-             }
-     
-             #prev:focus {
-                 outline: 0;
-             }
-     
-             #next {
-                 top: 65%;
-                 right: 15px;
-                 font-size: 40px;
-                 background-color: transparent;
-                 color: gray;
-     
-             }
-     
-             #next:focus {
-                 outline: 0;
-             }
-     
-             #carousel {
-                 overflow: auto;
-                 scroll-behavior: smooth;
-                 scrollbar-width: none;
-     
-                 #content {
-                     display: grid;
-                     grid-auto-flow: column;
-                     margin: auto;
-                     box-sizing: border-box;
-     
-                     .eRider_img_1 {
-                         overflow: hidden;
-                         width: 300px;
-                         height: 300px;
-                         transition: 0.4s;
-                         position: relative;
-                         .erider_hover {
-                             background-color: rgba(255, 0, 76, 0.6);
-                             width: 300px;
-                             height: 300px;
-                             position: absolute;
-                             top: 0;
-                             left: 0;
-                             visibility: hidden;
-                             display: flex;
-                             flex-direction: column;
-                             justify-content: center;
-                             align-items: center;
-                             gap: 10px;
-     
-     
-                             h3 {
-                                 font-size: 40px;
-                                 color: white;
-                             }
-     
-                             .eRider_hover_btn {
-                                 height: 40px;
-                                 width: 180px;
-                                 background-color: black;
-                                 opacity: 1;
-                                 display: flex;
-                                 justify-content: center;
-                                 align-items: center;
-                                 color: white;
-                                 text-decoration: none;
-                             }
-     
-                             .eRider_hover_btn:hover {
-                                 background-color: white;
-                                 color: black;
-                             }
-     
-                         }
-                     }
-     
-                     .eRider_img_1:hover {
-                         .erider_hover {
-                             visibility: visible;
-                             transition: 0.4s;
-                             z-index: 2;
-                         }
-     
-                         .item {
-     
-                             transition: 0.4s;
-                             transform: scale(1.1);
-     
-                         }
-     
-                     }
-     
-     
-                     .item {
-                         width: 300px;
-                         height: 300px;
-                         transition: 0.4s;
-     
-                     }
-     
-     
-     
-     
-                 }
-             }
-     
-             #carousel::-webkit-scrollbar {
-                 height: 0;
-             }
-         }
-     }
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -------------------------------------------------
-// horizontal pink carousel style end by ilkin
-
-
-
-// ACCESSORIES section carousel style by ilkin start
-
-#accessories {
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .name {
-        padding-bottom: 50px;
-        width: 400px;
-        text-align: center;
-
-        h1 {
-            font-weight: bold;
-        }
-    }
-
-    swiper-container {
-        width: 80%;
-        margin: auto;
-        height: 500px;
-        cursor: grab;
-
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            gap: 0;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-
-            .card {
-                background-color: #E5E1D8;
-
-                .image {
-                    height: 60%;
-                    img {
-                        width: 100%;
-                        background-color: #E5E1D8;
-                    }
-
-                }
-
-                .card-body {
-                    height: 200px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 40%;
-                }
-            }
-
-
-        }
-
-    }
-
-
-
-}
-}
 // ACCESSORIES section carousel style by ilkin end
 
 
