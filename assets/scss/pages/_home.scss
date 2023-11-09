@@ -654,6 +654,7 @@
         width: 80%;
         margin: auto;
         height: 500px;
+        cursor: grab;
 
         swiper-slide {
             text-align: center;
@@ -703,14 +704,26 @@
 
 @media screen and (max-width: 568px){
         #accessories{
-            .swiper-container{
+            swiper-container{
                 display: flex;
                 flex-wrap: wrap;
-                .swipper-slide{
-                    width: 30%;
+                swipper-slide{
+                    width: 33%;
                 }
             }
         }
+}
+
+@media screen and (min-width: 569px) and (max-width: 856px){
+    #accessories{
+        swiper-container{
+            display: flex !important;
+            flex-wrap: wrap !important;
+            swipper-slide{
+                width: 50% !important;
+            }
+        }
+    }
 }
 
 // ACCESSORIES section carousel responsive by ilkin end
