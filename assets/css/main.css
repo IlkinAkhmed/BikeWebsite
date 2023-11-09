@@ -1,9 +1,10 @@
 .pink-button {
-  padding: 5px 15px;
+  padding: 10px 15px;
   background-color: #ff004e;
   color: white;
   border-color: #ff004e;
   transition: 0.5s;
+  font-family: var(--font-heading-family);
 }
 .pink-button:hover {
   background-color: black;
@@ -13,9 +14,10 @@
 }
 
 .white-button {
-  padding: 5px 15px;
+  padding: 10px 15px;
   box-sizing: border-box;
   transition: 0.5s;
+  font-family: var(--font-heading-family);
 }
 .white-button:hover {
   background-color: black;
@@ -25,10 +27,11 @@
 }
 
 .black-button {
-  padding: 5px 15px;
+  padding: 10px 15px;
   background-color: black;
   color: white;
   transition: 0.5s;
+  font-family: var(--font-heading-family);
 }
 .black-button:hover {
   background-color: rgb(255, 255, 255);
@@ -527,30 +530,24 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   height: 100vh;
   padding: 20px;
 }
-#home .carousel .carousel-inner .container:hover .home-texts {
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-  transition: 0.4s;
-}
 #home .carousel .carousel-inner .container .home-texts {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80%;
   margin: auto;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+#home .carousel .carousel-inner .container .home-texts:hover .partner {
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
   transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts .partner {
   width: 60%;
+  padding: 50px 100px 50px 0;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-}
-#home .carousel .carousel-inner .container .home-texts .partner:hover {
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-  transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts .partner :first-child {
   font-size: 15px;
@@ -889,6 +886,109 @@ header .navbar_rider .navbar_basket:hover .basket_number {
 }
 .active {
   display: flex !important;
+}
+
+#hr-carousel {
+  padding: 100px 0;
+  background-color: #DAD3C6;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+#hr-carousel .slider {
+  background-color: #ff004e;
+  box-shadow: 0 10px 20px -5px rgb(0, 0, 0);
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+#hr-carousel .slider::before, #hr-carousel .slider::after {
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+#hr-carousel .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+#hr-carousel .slider::before {
+  left: 0;
+  top: 0;
+}
+#hr-carousel .slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+#hr-carousel .slider .slide-track:hover {
+  animation-play-state: paused;
+}
+#hr-carousel .slider .slide {
+  height: 200px;
+  width: 400px;
+  margin: 0 100px;
+  opacity: 0.5;
+}
+
+#accessories {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#accessories .name {
+  padding-bottom: 50px;
+  width: 400px;
+  text-align: center;
+}
+#accessories .name h1 {
+  font-weight: bold;
+}
+#accessories swiper-container {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+}
+#accessories swiper-container swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#accessories swiper-container swiper-slide .card {
+  background-color: #E5E1D8;
+}
+#accessories swiper-container swiper-slide .card .image {
+  height: 60%;
+}
+#accessories swiper-container swiper-slide .card .image img {
+  width: 100%;
+  background-color: #E5E1D8;
+}
+#accessories swiper-container swiper-slide .card .card-body {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
 }
 
 #login {
