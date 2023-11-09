@@ -1,0 +1,200 @@
+// Ahmads Footer Start
+#footer {
+    background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_7_1_79f36a61-c447-43a9-b009-0c763dd719be.jpg?v=1670050917);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 30px;
+
+    .footertop {
+        height: auto;
+        padding-left: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: white;
+        
+        .inputsfooter {
+            max-width: 400px;
+
+            input {
+                width: 300px;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid white;
+                color: white;
+            }
+
+            button {
+                color: #ff004e;
+                background-color: transparent;
+                border: none;
+                transition: 0.2s;
+            }
+
+            button:hover {
+                color: white;
+                cursor: pointer;
+            }
+
+            i {
+                color: white;
+                transition: 0.2s;
+
+            }
+
+            button:hover i {
+                color: #ff004e;
+                transition: 0.2s;
+                transform: rotate(45deg);
+            }
+        }
+
+        img {
+            padding-top: 20px;
+            max-width: min(150px)
+        }
+
+        li {
+            font-size: 15px;
+        }
+
+        .footericons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            .iconcircle {
+                width: 40px;
+                height: 40px;
+                border: 2px solid #8e8e8e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                font-size: 15px;
+                color: #8e8e8e;
+            }
+            .iconcircle:hover{
+                color: #ff004e;
+                border: 2px solid #ff004e;
+                cursor: pointer;
+            }
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        .header {
+            font-size: 30px;
+        }
+        .pages{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .doublefooter{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .footerbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-height: 50vh;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .contact{
+                margin-bottom: 20px;
+                height:30vh;
+            }
+        }
+    }
+    .aboutbox{
+        gap: 20px;
+    }
+    .footerbottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        border-top: 2px solid #8e8e8e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .bottombox {
+            height: 100%;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                color: white;
+
+                a {
+                    color: white;
+                    transition: 0.4s;
+
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: #ff004e;
+                    text-decoration: none;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 995px) {
+    #footer .footertop li {
+        font-size: 10px;
+    }
+
+    #footer .footertop h6 {
+        font-size: 15px;
+    }
+
+    #footer .footertop .iconcircle {
+        font-size: 10px;
+    }
+
+    #footer .footertop .header {
+        font-size: 20px;
+    }
+
+    .footertop img {
+        display: none;
+    }
+    .footerbox{
+        text-align: center;
+    }
+    .footerbottom img{
+        width: 100px;
+    }
+    .footerbottom{
+        justify-content: center;
+        align-items: center;
+    }
+}
+// Ahmads Footer End

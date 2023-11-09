@@ -37,3 +37,19 @@ SearchInput.addEventListener('click', () => {
 
 
 
+// Ahmad Edited Start
+// Open and Close Search start
+const Search = document.getElementById("search")
+const opensearch = document.getElementById("opensearch")
+const exitsearch = document.querySelector(".fa-circle-xmark")
+
+opensearch.addEventListener("click",function(e){
+    e.preventDefault()
+    Search.classList.add("active")
+})
+
+exitsearch.addEventListener("click",function(){
+    Search.classList.remove("active")
+})
+// Open and Close Search end
+// Ahmad Edited End
