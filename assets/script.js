@@ -34,6 +34,114 @@ SearchInput.addEventListener('click', () => {
 // search line end 
 
 // edited By Ali end 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------
+
+
+
+
+const gap = 16;
+
+let carousel = document.querySelectorAll("#carousel")[0]
+let content = document.querySelectorAll("#content")[0]
+let next = document.querySelectorAll("#next")[0]
+let prev = document.querySelectorAll("#prev")[0]
+
+
+
+next.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+  if (carousel.scrollWidth !== 0) {
+    prev.style.display = "flex";
+  }
+  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+
+  }
+});
+prev.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+  if (carousel.scrollLeft - width - gap <= 0) {
+  }
+  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "flex";
+  }
+});
+
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
+
+
+
+let carousel1 = document.querySelectorAll("#carousel")[1]
+let content1 = document.querySelectorAll("#content")[1]
+let next1 = document.querySelectorAll("#next")[1]
+let prev1 = document.querySelectorAll("#prev")[1]
+
+
+
+
+
+
+next1.addEventListener("click", e => {
+  carousel1.scrollBy(width + gap, 0);
+  if (carousel1.scrollWidth !== 0) {
+    prev1.style.display = "flex";
+  }
+  if (content1.scrollWidth - width - gap <= carousel1.scrollLeft + width) {
+
+  }
+});
+prev1.addEventListener("click", e => {
+  carousel1.scrollBy(-(width + gap), 0);
+  if (carousel1.scrollLeft - width - gap <= 0) {
+  }
+  if (!content1.scrollWidth - width - gap <= carousel1.scrollLeft + width) {
+    next1.style.display = "flex";
+  }
+});
+
+let width1 = carousel1.offsetWidth;
+window.addEventListener("resize", e => (width = carousel1.offsetWidth));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------
 // Ahmad Edited Start
 // Open and Close Search start
 const Search = document.getElementById("search")

@@ -4,6 +4,7 @@
   color: white;
   border-color: #ff004e;
   transition: 0.5s;
+  cursor: pointer;
   font-family: var(--font-heading-family);
 }
 .pink-button:hover {
@@ -17,6 +18,7 @@
   padding: 10px 15px;
   box-sizing: border-box;
   transition: 0.5s;
+  cursor: pointer;
   font-family: var(--font-heading-family);
 }
 .white-button:hover {
@@ -31,6 +33,7 @@
   background-color: black;
   color: white;
   transition: 0.5s;
+  cursor: pointer;
   font-family: var(--font-heading-family);
 }
 .black-button:hover {
@@ -496,6 +499,30 @@ header .navbar_rider .navbar_basket:hover .basket_number {
     z-index: 5;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.upper_page {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 5;
+}
+.upper_page a i {
+  font-size: 40px;
+  color: #ff004e;
+}
+.upper_page a i:hover {
+  color: black;
+}
+
 #home {
   width: 100%;
   height: 100vh;
@@ -539,15 +566,13 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts:hover .partner {
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
   transition: 0.4s;
 }
 #home .carousel .carousel-inner .container .home-texts .partner {
   width: 60%;
   padding: 50px 100px 50px 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 #home .carousel .carousel-inner .container .home-texts .partner :first-child {
   font-size: 15px;
@@ -633,8 +658,7 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   #home .carousel .carousel-inner .carousel-item .container .home-texts {
     height: 50%;
     width: 100%;
-    -webkit-backdrop-filter: blur(0px);
-            backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
   #home .carousel .carousel-inner .carousel-item .container .home-texts .partner {
     width: 100%;
@@ -666,6 +690,7 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
 }
 #banner-media .bannerbox {
   margin-right: 150px;
@@ -888,6 +913,769 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   display: flex !important;
 }
 
+#cityRider {
+  width: 100%;
+}
+#cityRider #cityRider-up {
+  background-color: #dcd8cd;
+  min-height: 90vh;
+  max-width: 100%;
+  display: flex;
+}
+#cityRider #cityRider-up .city_up_left {
+  background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/AdobeStock_95401987.jpg?v=1668749612);
+  min-width: 50%;
+  min-height: 90vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: end;
+}
+#cityRider #cityRider-up .city_up_left .left_box_down {
+  min-width: 100%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0px 0px 20px;
+}
+#cityRider #cityRider-up .city_up_left .left_box_down .hoverBtn {
+  background-color: #ff004e;
+  min-height: 10vh;
+  max-width: 49%;
+  color: white;
+  font-size: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#cityRider #cityRider-up .city_up_left .left_box_down .hoverBtn h5 {
+  opacity: 0;
+  position: absolute;
+  margin-top: 70px;
+  font-size: 40px;
+  transition: 0.3s;
+}
+#cityRider #cityRider-up .city_up_left .left_box_down .hoverBtn h6 {
+  font-size: 40px;
+  transition: 0.1s;
+}
+#cityRider #cityRider-up .city_up_left .left_box_down .hoverBtn:hover {
+  background-color: white;
+  color: #ff004e;
+  transition: 0.4s;
+}
+#cityRider #cityRider-up .city_up_left .left_box_down .starting {
+  background-color: #ff004e;
+  min-height: 4vh;
+  max-width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#cityRider #cityRider-up .city_up_left:hover .hoverBtn h6 {
+  transform: translateY(-30px);
+  transition: 0.1s;
+  opacity: 0;
+}
+#cityRider #cityRider-up .city_up_left:hover .hoverBtn h5 {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translateY(-30px);
+}
+#cityRider #cityRider-up .city_up_right {
+  min-width: 50%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text {
+  min-width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text {
+  min-width: 100%;
+  min-height: 12vh;
+  padding: 5px 20px;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text .rider_text_col {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 6vh;
+  color: black;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text .rider_box_line {
+  background-color: black;
+  max-width: 100%;
+  min-height: 4px;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text .line_up_1 {
+  background-color: #ff004e;
+  max-width: 70%;
+  min-height: 7px;
+  margin-top: -5px;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text .line_up_2 {
+  background-color: #ff004e;
+  max-width: 85%;
+  min-height: 7px;
+  margin-top: -5px;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text .line_up_3 {
+  background-color: #ff004e;
+  max-width: 90%;
+  min-height: 7px;
+  margin-top: -5px;
+}
+#cityRider #cityRider-up .city_up_right .right_box_text .box_in_text .line_up_4 {
+  background-color: #ff004e;
+  max-width: 65%;
+  min-height: 7px;
+  margin-top: -5px;
+}
+#cityRider #cityRider-down {
+  background-color: #dcd8cd;
+  min-height: 90vh;
+  max-width: 100%;
+  display: flex;
+}
+#cityRider #cityRider-down .city_down_left {
+  min-width: 50%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cityRider #cityRider-down .city_down_left .left_box_text {
+  min-width: 86%;
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#cityRider #cityRider-down .city_down_left .left_box_text h1 {
+  font-size: 55px;
+}
+#cityRider #cityRider-down .city_down_left .left_box_text span {
+  font-size: 26px;
+}
+#cityRider #cityRider-down .city_down_left .left_box_text p {
+  max-width: 400px;
+}
+#cityRider #cityRider-down .city_down_left .left_box_text .pink-button {
+  text-align: center;
+  max-width: 130px;
+  max-height: 40px;
+}
+#cityRider #cityRider-down .city_down_right {
+  background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/AdobeStock_287721050.jpg?v=1668754912);
+  min-width: 50%;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#cityRider #cityRider-down .city_down_right .left_box_down {
+  min-width: 100%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0px 0px 20px;
+}
+#cityRider #cityRider-down .city_down_right .left_box_down .hoverBtn {
+  background-color: #ff004e;
+  min-height: 10vh;
+  max-width: 49%;
+  color: white;
+  font-size: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#cityRider #cityRider-down .city_down_right .left_box_down .hoverBtn h5 {
+  opacity: 0;
+  position: absolute;
+  margin-top: 70px;
+  font-size: 40px;
+  transition: 0.3s;
+}
+#cityRider #cityRider-down .city_down_right .left_box_down .hoverBtn h6 {
+  font-size: 40px;
+  transition: 0.1s;
+}
+#cityRider #cityRider-down .city_down_right .left_box_down .hoverBtn:hover {
+  background-color: white;
+  color: #ff004e;
+  transition: 0.4s;
+}
+#cityRider #cityRider-down .city_down_right .left_box_down .starting {
+  background-color: #ff004e;
+  min-height: 4vh;
+  max-width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#cityRider #cityRider-down .city_down_right:hover .hoverBtn h6 {
+  transform: translateY(-30px);
+  transition: 0.1s;
+  opacity: 0;
+}
+#cityRider #cityRider-down .city_down_right:hover .hoverBtn h5 {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translateY(-30px);
+}
+
+@media screen and (max-width: 917px) {
+  #eRiders #eRider_up {
+    max-width: 100%;
+  }
+  #eRiders #eRider_up p {
+    display: none;
+  }
+  #eRiders #eRider_up h1 {
+    position: absolute;
+    top: 100px;
+    font-size: 50px;
+    z-index: 1;
+  }
+  #eRiders #eRider_up #wrapper {
+    max-width: 65.5%;
+  }
+  #eRiders #eRider_up #wrapper #prev,
+  #eRiders #eRider_up #wrapper #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+  }
+  #eRiders #eRider_up #wrapper #prev {
+    top: 65%;
+    left: 15px;
+    font-size: 40px;
+    background-color: transparent;
+    color: gray;
+    border: none;
+  }
+  #eRiders #eRider_up #wrapper #prev:focus {
+    outline: 0;
+  }
+  #eRiders #eRider_up #wrapper #next {
+    top: 65%;
+    right: 15px;
+    font-size: 40px;
+    background-color: transparent;
+    color: gray;
+  }
+  #eRiders #eRider_up #wrapper #next:focus {
+    outline: 0;
+  }
+  #eRiders #eRider_up #wrapper #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transition: 0.4s;
+    position: relative;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover {
+    background-color: rgba(255, 0, 76, 0.6);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover h3 {
+    font-size: 40px;
+    color: white;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn {
+    height: 40px;
+    width: 180px;
+    background-color: black;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn:hover {
+    background-color: white;
+    color: black;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1:hover .erider_hover {
+    visibility: visible;
+    transition: 0.4s;
+    z-index: 2;
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .eRider_img_1:hover .item {
+    transition: 0.4s;
+    transform: scale(1.1);
+  }
+  #eRiders #eRider_up #wrapper #carousel #content .item {
+    width: 300px;
+    height: 300px;
+    transition: 0.4s;
+  }
+  #eRiders #eRider_up #wrapper #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  #eRiders #eRider_down {
+    max-width: 100%;
+  }
+  #eRiders #eRider_down #wrapper {
+    max-width: 65.5%;
+  }
+  #eRiders #eRider_down #wrapper #prev,
+  #eRiders #eRider_down #wrapper #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+  }
+  #eRiders #eRider_down #wrapper #prev {
+    top: 65%;
+    left: 15px;
+    font-size: 40px;
+    background-color: transparent;
+    color: gray;
+    border: none;
+  }
+  #eRiders #eRider_down #wrapper #prev:focus {
+    outline: 0;
+  }
+  #eRiders #eRider_down #wrapper #next {
+    top: 65%;
+    right: 15px;
+    font-size: 40px;
+    background-color: transparent;
+    color: gray;
+  }
+  #eRiders #eRider_down #wrapper #next:focus {
+    outline: 0;
+  }
+  #eRiders #eRider_down #wrapper #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content {
+    display: grid;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    transition: 0.4s;
+    position: relative;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover {
+    background-color: rgba(255, 0, 76, 0.6);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover h3 {
+    font-size: 40px;
+    color: white;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn {
+    height: 40px;
+    width: 180px;
+    background-color: black;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn:hover {
+    background-color: white;
+    color: black;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1:hover .erider_hover {
+    visibility: visible;
+    transition: 0.4s;
+    z-index: 2;
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .eRider_img_1:hover .item {
+    transition: 0.4s;
+    transform: scale(1.1);
+  }
+  #eRiders #eRider_down #wrapper #carousel #content .item {
+    width: 300px;
+    height: 300px;
+    transition: 0.4s;
+  }
+  #eRiders #eRider_down #wrapper #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+}
+@media screen and (max-width: 917px) {
+  #cityRider #cityRider-up {
+    flex-direction: column;
+  }
+  #cityRider #cityRider-down {
+    flex-direction: column;
+  }
+}
+#eRiders {
+  width: 100%;
+}
+#eRiders #eRider_up {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  position: relative;
+  background-color: #dcd8cd;
+}
+#eRiders #eRider_up .background-text {
+  text-align: center;
+  width: 100%;
+  opacity: 0.1;
+  color: gray;
+  font-size: 150px;
+}
+#eRiders #eRider_up h1 {
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  font-size: 50px;
+  z-index: 1;
+}
+#eRiders #eRider_up #wrapper {
+  width: 90%;
+  margin: auto;
+}
+#eRiders #eRider_up #wrapper #prev,
+#eRiders #eRider_up #wrapper #next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+}
+#eRiders #eRider_up #wrapper #prev {
+  top: 60%;
+  left: 30px;
+  font-size: 40px;
+  background-color: transparent;
+  color: gray;
+  border: none;
+}
+#eRiders #eRider_up #wrapper #prev:focus {
+  outline: 0;
+}
+#eRiders #eRider_up #wrapper #next {
+  top: 60%;
+  right: 30px;
+  font-size: 40px;
+  background-color: transparent;
+  color: gray;
+}
+#eRiders #eRider_up #wrapper #next:focus {
+  outline: 0;
+}
+#eRiders #eRider_up #wrapper #carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+#eRiders #eRider_up #wrapper #carousel #content {
+  display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 {
+  overflow: hidden;
+  width: 450px;
+  height: 450px;
+  transition: 0.4s;
+  position: relative;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover {
+  background-color: rgba(255, 0, 76, 0.6);
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover h3 {
+  font-size: 40px;
+  color: white;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn {
+  height: 40px;
+  width: 180px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn:hover {
+  background-color: white;
+  color: black;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1:hover .erider_hover {
+  visibility: visible;
+  transition: 0.4s;
+  z-index: 2;
+}
+#eRiders #eRider_up #wrapper #carousel #content .eRider_img_1:hover .item {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+#eRiders #eRider_up #wrapper #carousel #content .item {
+  width: 450px;
+  height: 450px;
+  transition: 0.4s;
+}
+#eRiders #eRider_up #wrapper #carousel::-webkit-scrollbar {
+  height: 0;
+}
+#eRiders #eRider_down {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: #dcd8cd;
+}
+#eRiders #eRider_down #wrapper {
+  width: 90%;
+  margin: auto;
+}
+#eRiders #eRider_down #wrapper #prev,
+#eRiders #eRider_down #wrapper #next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+}
+#eRiders #eRider_down #wrapper #prev {
+  top: 50%;
+  left: 30px;
+  font-size: 40px;
+  background-color: transparent;
+  color: gray;
+  border: none;
+}
+#eRiders #eRider_down #wrapper #prev:focus {
+  outline: 0;
+}
+#eRiders #eRider_down #wrapper #next {
+  top: 50%;
+  right: 30px;
+  font-size: 40px;
+  background-color: transparent;
+  color: gray;
+}
+#eRiders #eRider_down #wrapper #next:focus {
+  outline: 0;
+}
+#eRiders #eRider_down #wrapper #carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+#eRiders #eRider_down #wrapper #carousel #content {
+  display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 {
+  overflow: hidden;
+  width: 450px;
+  height: 450px;
+  transition: 0.4s;
+  position: relative;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover {
+  background-color: rgba(255, 0, 76, 0.6);
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover h3 {
+  font-size: 40px;
+  color: white;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn {
+  height: 40px;
+  width: 180px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1 .erider_hover .eRider_hover_btn:hover {
+  background-color: white;
+  color: black;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1:hover .erider_hover {
+  visibility: visible;
+  transition: 0.4s;
+  z-index: 2;
+}
+#eRiders #eRider_down #wrapper #carousel #content .eRider_img_1:hover .item {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+#eRiders #eRider_down #wrapper #carousel #content .item {
+  width: 450px;
+  height: 450px;
+  transition: 0.4s;
+}
+#eRiders #eRider_down #wrapper #carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#accessories {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebe7e2;
+}
+#accessories .name {
+  padding-bottom: 50px;
+  width: 400px;
+  text-align: center;
+}
+#accessories .name h1 {
+  font-weight: bold;
+}
+#accessories swiper-container {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  cursor: grab;
+}
+#accessories swiper-container swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ebe7e2;
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#accessories swiper-container swiper-slide .card {
+  background-color: #E5E1D8;
+}
+#accessories swiper-container swiper-slide .card .image {
+  height: 60%;
+  overflow: hidden;
+}
+#accessories swiper-container swiper-slide .card .image img {
+  width: 100%;
+  background-color: #E5E1D8;
+  transition: 0.5s;
+}
+#accessories swiper-container swiper-slide .card:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#accessories swiper-container swiper-slide .card .card-body {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
 #hr-carousel {
   padding: 100px 0;
   background-color: #DAD3C6;
@@ -941,54 +1729,6 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   width: 400px;
   margin: 0 100px;
   opacity: 0.5;
-}
-
-#accessories {
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#accessories .name {
-  padding-bottom: 50px;
-  width: 400px;
-  text-align: center;
-}
-#accessories .name h1 {
-  font-weight: bold;
-}
-#accessories swiper-container {
-  width: 80%;
-  margin: auto;
-  height: 500px;
-}
-#accessories swiper-container swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  gap: 0;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-#accessories swiper-container swiper-slide .card {
-  background-color: #E5E1D8;
-}
-#accessories swiper-container swiper-slide .card .image {
-  height: 60%;
-}
-#accessories swiper-container swiper-slide .card .image img {
-  width: 100%;
-  background-color: #E5E1D8;
-}
-#accessories swiper-container swiper-slide .card .card-body {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 40%;
 }
 
 #login {
