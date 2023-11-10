@@ -39,13 +39,6 @@ html {
     width: 100%;
     height: 100vh;
 
-    .carousel-item .first {
-        background-image: url('https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_1_1.jpg?v=1670846020');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
     .carousel {
         font-family: var(--font-heading-family);
 
@@ -275,17 +268,18 @@ html {
 #banner-media {
     background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_15_1.jpg?v=1669964764&width=1500);
     display: flex;
+    padding: 50px 0;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
 
     .bannerbox {
-        margin-right: 150px;
-        width: 50%;
+        // margin-right: 150px;
+        width: 80%;
+        margin: auto;
         height: 60vh;
         display: flex;
         flex-direction: column;
@@ -295,7 +289,8 @@ html {
         .newlaunch {
             color: #ff004e;
             font-size: 20px;
-            background-color: #dcd8cd;
+            background-color: transparent;
+            font-weight: bold;
         }
 
         h2 {
@@ -307,40 +302,6 @@ html {
             font-size: 16px;
         }
 
-        .bottombuttons {
-            width: 80%;
-            display: flex;
-            justify-content: space-evenly;
-
-            #button1 {
-                width: 200px;
-                height: 40px;
-                transition: 0.4s;
-            }
-
-            #button1:hover {
-                color: white;
-                transition: 0.4s;
-                background-color: black;
-
-            }
-
-            #button2 {
-                width: 200px;
-                height: 40px;
-                border: none;
-                background-color: #ff004e;
-                color: white;
-                transition: 0.4s;
-
-            }
-
-            #button2:hover {
-                transition: 0.4s;
-                background-color: black;
-            }
-        }
-
     }
 }
 
@@ -350,176 +311,125 @@ html {
 
 
 
-@media screen and (max-width: 991px) {
-    .bannerbox {
-        margin: auto !important;
+@media screen and (max-width: 700px) {
+#banner-media{
+    .bannerbox{
+        width: 100%;
 
-        .bottombuttons {
-            font-size: 10px;
+        button{
+            width: 120px;
+            padding: 5px 10px;
         }
     }
-
-    #banner-media {
-        padding: 100px !important;
-    }
-
-    .cardbox {
-
-
-
-        h6 {
-            font-size: 20px !important;
-        }
-
-        p {
-            font-size: 10px !important;
-        }
-
-        a {
-            font-size: 10px !important;
-        }
-
-        span {
-            font-size: 5px !important;
-        }
-    }
-
-    .bannerbox {
-        margin-right: 150px;
-        width: 50%;
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-        .newlaunch {
-            font-size: 10px;
-        }
-
-        h2 {
-            font-size: 25px !important;
-        }
-
-        p {
-            font-size: 8px !important;
-        }
-    }
+}
 
 
 }
 
 // Smart E-BIKE Start
+
 #smartE-bike {
     width: 100%;
     position: relative;
     min-height: 950px;
     background-color: #ebe7e2;
 
-    .imgdiv {
+    .img {
         max-width: 60%;
         position: absolute;
-        top: 0;
-        z-index: 1;
         opacity: 0.3;
+        z-index: 1;
+        top: 0;
+
     }
 
-    .imgdiv2 {
-        max-width: 60%;
-        position: absolute;
-        top: 0;
+    .two {
         right: 0;
-        z-index: 1;
-        opacity: 0.3;
         transform: scaleX(-1);
+
     }
 
 
     #smartE-bikebox {
-        min-height: 800px;
-        max-width: 80%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        width: 80%;
+        margin: auto;
+        padding: 50px 0;
 
         .smarttop {
             width: 100%;
-            height: 500px;
+            // height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 60px;
 
-            h2 {
-                font-size: 60px;
+            .smart2 {
+                margin: auto;
+                z-index: 1;
                 text-align: center;
+
+                h2 {
+                    font-size: 60px;
+                }
             }
 
             .smartcards {
-
+                width: 100%;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding: 20px 30px;
-                z-index: 2;
-
-                .cardbox {
-
-                    margin-left: auto;
-                    display: flex;
-
-                    h6 {
-                        font-size: 30px;
-                    }
-
-                    p {
-                        font-size: 20px;
-                    }
-
-                    a {
-                        font-size: 15px;
-                    }
-                }
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                height: fit-content;
 
                 .smartcard {
-
+                    z-index: 2;
+                    max-width: 30%;
+                    height: 250px;
+                    border-radius: 10px;
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
                     padding-left: 20px;
                     background-color: #dcd8cd;
+                    transition: 0.5s;
+                    padding: 40px 10px;
+
 
 
                     button {
-                        background-color: #dcd8cd;
+                        background-color: transparent;
                         border: none;
-                        border-bottom: 1px solid black;
                         padding-bottom: 10px;
                         text-align: center;
                         cursor: pointer;
+                        border-bottom: 1px solid rgb(0, 0, 0);
+                        border-width: 100%;
+                        transition: 0.4s;
                     }
 
                     button:hover {
                         cursor: pointer;
+                        color: #ff004e;
+                    }
+                    &:hover{
+                        background-color:#ff004e;
+                        padding: 20px;
+                        transition: 0.5s;
+                        color: white;
+                        button{
+                            color: white;
+                            transition: 0.4s;
+                            border-color: white;
+                        }
                     }
                 }
 
-                .swipebuttons {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
-                }
             }
         }
 
 
         .smartbottom {
-            z-index: 1;
             text-align: center;
 
             h3 {
@@ -548,6 +458,51 @@ html {
                     .boxtext {
                         border-left: 2px solid #ff004e;
                         padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 678px) {
+    #smartE-bike{
+        .one{
+            display: none;
+        }
+        #smartE-bikebox{
+            .smarttop{
+                .smartcards{
+                    flex-wrap: wrap;
+                    .smartcard{
+                        max-width: 100%!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1024px){
+    #smartE-bike{
+        .one{
+            display: none;
+        }
+        #smartE-bikebox{
+            .smarttop{
+                .smartcards{
+                    flex-wrap: wrap;
+                    .smartcard{
+                        max-width: 48%!important;
                     }
                 }
             }
@@ -893,9 +848,11 @@ html {
 
         #eRider_up {
             max-width: 100%;
-            p{
+
+            p {
                 display: none;
             }
+
             h1 {
                 position: absolute;
                 top: 100px;
@@ -1194,56 +1151,95 @@ html {
 
 }
 
-
-// horizontal pink carousel style start by ilkin
-
-
-
-
-
-
-
-
 // section created by Ali end 
 
 
 
 
+// horizontal pink carousel style start by ilkin
+
+#hr-carousel {
+    padding: 100px 0;
+    background-color: #DAD3C6;
+
+    @mixin white-gradient {
+        background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    $animationSpeed: 40s;
+
+    // Animation
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 10))
+        }
+    }
 
 
+    // Styling
+    .slider {
+        background-color: #ff004e;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0);
+        height: 250px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 250px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
+
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            position: absolute;
+            top: 70px;
+            width: 100%;
+
+            &:hover {
+                animation-play-state: paused;
+
+            }
+        }
+
+        .slide {
+            height: 200px;
+            width: 400px;
+            margin: 0 100px;
+            opacity: 0.5;
+
+        }
+    }
 
 
+}
 
 
-
-
-
-
-
-
-// ----------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -------------------------------------------------
 // horizontal pink carousel style end by ilkin
+
+
 
 
 
@@ -1582,138 +1578,107 @@ html {
         }
     }
 
-    swiper-container {
-        width: 80%;
-        margin: auto;
-        height: 500px;
-        cursor: grab;
 
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background:#ebe7e2;
-            display: flex;
-            gap: 0;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-
-            .card {
-                background-color: #E5E1D8;
-
-                .image {
-                    height: 60%;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                        background-color: #E5E1D8;
-                        transition: 0.5s;
-                    }
-
-                }
-                &:hover{
-                    img{
-                        transform: scale(1.1);
-                        transition: 0.5s;
-                    }
-                }
-
-                .card-body {
-                    height: 200px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 40%;
-                }
-            }
-
-
-        }
-
-    }
-
-
-
-}
-
-
-
-#hr-carousel {
-    padding: 100px 0;
-    background-color: #DAD3C6;
-
-    @mixin white-gradient {
-        background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-    }
-
-    $animationSpeed: 40s;
-
-    // Animation
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(calc(-250px * 10))
-        }
-    }
-
-
-    // Styling
-    .slider {
-        background-color: #ff004e;
-        box-shadow: 0 10px 20px -5px rgba(0, 0, 0);
-        height: 250px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
+    #wrapper {
         width: 100%;
+        position: relative;
+        max-width: 86%;
+        margin: auto;
 
-        &::before,
-        &::after {
-            @include white-gradient;
-            content: "";
-            height: 250px;
-            position: absolute;
-            width: 200px;
-            z-index: 2;
-        }
+        #slide {
+            overflow: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            height: 600px;
 
-        &::after {
-            right: 0;
-            top: 0;
-            transform: rotateZ(180deg);
-        }
+            #slide-inside {
+                display: grid;
+                grid-auto-flow: column;
+                margin: auto;
+                box-sizing: border-box;
+                height: 100%;
 
-        &::before {
-            left: 0;
-            top: 0;
-        }
+                .card {
+                    background-color: #E5E1D8;
+                    ;
+                    width: 550px;
+                    height: 600px;
+                    border: none;
 
-        .slide-track {
-            animation: scroll $animationSpeed linear infinite;
-            display: flex;
-            position: absolute;
-            top: 70px;
-            width: 100%;
+                    .image {
+                        height: 70%;
+                        overflow: hidden;
 
-            &:hover {
-                animation-play-state: paused;
+                        img {
+                            width: 100%;
+                            background-color: #E5E1D8;
+                            transition: 0.5s;
+                        }
+
+
+                    }
+
+                    .card-body {
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40%;
+                    }
+
+
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                            transition: 0.5s;
+                        }
+                    }
+                }
 
             }
-        }
 
-        .slide {
-            height: 200px;
-            width: 400px;
-            margin: 0 100px;
-            opacity: 0.5;
+
+
 
         }
+
+        #slide::-webkit-scrollbar {
+            height: 0;
+        }
+
+        #prevbtn,
+        #nextbtn {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: white;
+            border: none;
+            padding: 8px;
+            border-radius: 50%;
+            outline: 0;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #prevbtn {
+            top: 50%;
+            left: 0;
+            transform: translate(50%, -50%);
+            display: none;
+        }
+
+        #nextbtn {
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+
+
+
     }
+
 
 
 }
@@ -1721,8 +1686,262 @@ html {
 // ACCESSORIES section carousel style by ilkin end
 
 
+
+
+
 // ACCESSORIES section carousel responsive by ilkin start
+
+
+@media screen and (max-width: 568px) {
+    #accessories {
+        #wrapper {
+            #slide {
+                height: 300px;
+
+                #slide-inside {
+                    .card {
+                        width: 250px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 569px) and (max-width: 992px) {
+    #accessories {
+        #wrapper {
+            #slide {
+                height: 400px;
+
+                #slide-inside {
+                    .card {
+                        width: 350px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
 
 // ACCESSORIES section carousel responsive by ilkin end
+
+
+
+// latest products section style started by ilkin
+
+#latest-products {
+    width: 100%;
+    height: fit-content;
+    font-family: var(--font-heading-family);
+    background-color: #EBE7E2;
+
+    .name {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        padding: 20px 0;
+
+        h2 {
+            font-weight: bold;
+        }
+    }
+
+    .bikes {
+        display: flex;
+        height: 100%;
+
+        .left {
+            width: 60%;
+            height: 100%;
+            padding: 0 30px;
+
+            swiper-container {
+                width: 100%;
+                height: 1000px;
+                min-height: 90%;
+
+                swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background-color: #EBE7E2;
+                    display: flex;
+                    justify-content: center;
+                    // align-items: center;
+
+                    // height: 100%;
+                    .properties {
+                        width: 400px;
+                        padding: 200px 0;
+
+                        h2 {
+                            font-weight: bold;
+                        }
+
+                        p {
+                            margin: 30px 0;
+                            font-weight: bold;
+                        }
+
+                    }
+                }
+
+                .bg-img-1 {
+                    background-image: url('https://dt-ezyrider.myshopify.com/cdn/shop/files/home-image-2-2.png?v=1677134913&width=960');
+                }
+
+                .bg-img-2 {
+                    background-image: url('https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_5_1_0192090b-e3d3-4348-b357-3c4ad59f0f6f.png?v=1669613521&width=960');
+                }
+
+                .swiper-image {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+            }
+
+        }
+
+        .rightSide {
+            width: 40%;
+            height: 800px;
+            padding: 100px 0;
+
+            .up {
+                width: 90%;
+                margin-bottom: 100px;
+            }
+
+            .right {
+                height: 50%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                text-align: center;
+
+                .design {
+                    width: 400px;
+                }
+
+                .capacity {
+                    // width: 350px;
+                    padding: 0 50px 0 0;
+
+                    .property-of-bike {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h5 {
+                            font-weight: bold;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// latest products section responsive started by ilkin
+
+@media screen and (max-width: 821px) {
+    #latest-products {
+        .bikes {
+            flex-wrap: wrap;
+
+            .left {
+                width: 100%;
+                height: fit-content;
+
+                .swiper-image {
+                    background-size: 100%;
+                    background-position: top;
+
+                }
+            }
+
+            .rightSide {
+                width: 90%;
+                margin: auto;
+
+                .right {
+                    flex-wrap: wrap;
+
+                    img {
+                        margin: auto;
+                    }
+
+                    .design {
+                        width: 100%;
+                    }
+
+                    .capacity {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 822px) and (max-width: 1124px) {
+    #latest-products {
+        .bikes {
+            flex-wrap: wrap;
+
+            .left {
+                width: 100%;
+            }
+
+            .rightSide {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1125px) and (max-width: 1278px) {
+    #latest-products {
+        .rightSide {
+            .right {
+                flex-wrap: wrap;
+                align-items: center;
+
+                img {
+                    margin: auto;
+                }
+
+                .design {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .capacity {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
+
+// latest products section responsive ended by ilkin
+
+
+// latest products section style started by ilkin

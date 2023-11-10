@@ -5,9 +5,11 @@
     color: white;
     border-color: #ff004e;
     transition: 0.5s;
+    width: 150px;
 
     cursor: pointer;
     font-family: var(--font-heading-family);
+    font-weight: bold;
     &:hover{
         background-color: black;
         color: white;
@@ -22,6 +24,9 @@
     transition: 0.5s;
     cursor: pointer;
     font-family: var(--font-heading-family);
+    font-weight: bold;
+    background-color: transparent;
+    width: 150px;
     &:hover{
         background-color: black;
         color: white;
@@ -38,6 +43,8 @@
     cursor: pointer;
 
     font-family: var(--font-heading-family);
+    font-weight: bold;
+    width: 150px;
     &:hover{
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
