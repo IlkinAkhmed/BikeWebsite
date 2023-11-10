@@ -1604,33 +1604,41 @@ html {
 #accessories .name h1 {
   font-weight: bold;
 }
-#accessories #wrapper swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #ebe7e2;
-  display: flex;
-  gap: 0;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+#accessories #wrapper {
+  width: 100%;
+  position: relative;
+  max-width: 86%;
+  margin: auto;
 }
-#accessories #wrapper swiper-slide .card {
+#accessories #wrapper #slide {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  height: 600px;
+}
+#accessories #wrapper #slide #slide-inside {
+  display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+  height: 100%;
+}
+#accessories #wrapper #slide #slide-inside .card {
   background-color: #E5E1D8;
+  width: 490px;
+  height: 500px;
+  border: none;
 }
-#accessories #wrapper swiper-slide .card .image {
-  height: 60%;
+#accessories #wrapper #slide #slide-inside .card .image {
+  height: 70%;
   overflow: hidden;
 }
-#accessories #wrapper swiper-slide .card .image img {
+#accessories #wrapper #slide #slide-inside .card .image img {
   width: 100%;
   background-color: #E5E1D8;
   transition: 0.5s;
 }
-#accessories #wrapper swiper-slide .card:hover img {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-#accessories #wrapper swiper-slide .card .card-body {
+#accessories #wrapper #slide #slide-inside .card .card-body {
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -1638,13 +1646,44 @@ html {
   align-items: center;
   height: 40%;
 }
+#accessories #wrapper #slide #slide-inside .card:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#accessories #wrapper #slide::-webkit-scrollbar {
+  height: 0;
+}
+#accessories #wrapper #prevbtn,
+#accessories #wrapper #nextbtn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+#accessories #wrapper #prevbtn {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+#accessories #wrapper #nextbtn {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
 
 @media screen and (max-width: 568px) {
   #accessories #wrapper #slide {
     height: 300px;
   }
   #accessories #wrapper #slide #slide-inside .card {
-    width: 250px;
+    width: 290px;
     height: 300px;
   }
 }
@@ -1653,7 +1692,7 @@ html {
     height: 400px;
   }
   #accessories #wrapper #slide #slide-inside .card {
-    width: 350px;
+    width: 390px;
     height: 400px;
   }
 }
@@ -1678,7 +1717,6 @@ html {
   position: relative;
   width: 100%;
   position: relative;
-  max-width: 86%;
   margin: auto;
 }
 #hr-carousel .slider #slide {
