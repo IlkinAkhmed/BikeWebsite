@@ -39,13 +39,6 @@ html {
     width: 100%;
     height: 100vh;
 
-    .carousel-item .first {
-        background-image: url('https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_1_1.jpg?v=1670846020');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
     .carousel {
         font-family: var(--font-heading-family);
 
@@ -267,6 +260,286 @@ html {
 // responsive for section home by ilkin end
 
 
+
+
+// Ahmad Edited Start
+
+// Banner Media Start
+#banner-media {
+    background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_15_1.jpg?v=1669964764&width=1500);
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+    .bannerbox {
+        // margin-right: 150px;
+        width: 80%;
+        margin: auto;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .newlaunch {
+            color: #ff004e;
+            font-size: 20px;
+            background-color: transparent;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+    }
+}
+
+
+// Banner Media End
+
+
+
+
+@media screen and (max-width: 700px) {
+    #banner-media {
+        .bannerbox {
+            width: 100%;
+
+            button {
+                width: 120px;
+                padding: 5px 10px;
+            }
+        }
+    }
+
+
+}
+
+// Smart E-BIKE Start
+
+#smartE-bike {
+    width: 100%;
+    position: relative;
+    min-height: 950px;
+    background-color: #ebe7e2;
+
+    .img {
+        max-width: 60%;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 1;
+        top: 0;
+
+    }
+
+    .two {
+        right: 0;
+        transform: scaleX(-1);
+
+    }
+
+
+    #smartE-bikebox {
+        width: 80%;
+        margin: auto;
+        padding: 50px 0;
+
+        .smarttop {
+            width: 100%;
+            // height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 60px;
+
+            .smart2 {
+                margin: auto;
+                z-index: 1;
+                text-align: center;
+
+                h2 {
+                    font-size: 60px;
+                }
+            }
+
+            .smartcards {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                height: fit-content;
+
+                .smartcard {
+                    z-index: 2;
+                    max-width: 30%;
+                    height: 250px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    background-color: #dcd8cd;
+                    transition: 0.5s;
+                    padding: 40px 10px;
+
+
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        padding-bottom: 10px;
+                        text-align: center;
+                        cursor: pointer;
+                        border-bottom: 1px solid rgb(0, 0, 0);
+                        border-width: 100%;
+                        transition: 0.4s;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        color: #ff004e;
+                    }
+
+                    &:hover {
+                        background-color: #ff004e;
+                        padding: 20px;
+                        transition: 0.5s;
+                        color: white;
+
+                        button {
+                            color: white;
+                            transition: 0.4s;
+                            border-color: white;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        .smartbottom {
+            text-align: center;
+
+            h3 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .bottombox {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 80%;
+                margin: auto;
+                gap: 20px;
+
+                .bottomboxes {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    .boxtext {
+                        border-left: 2px solid #ff004e;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 678px) {
+    #smartE-bike {
+        .one {
+            display: none;
+        }
+
+        #smartE-bikebox {
+            .smarttop {
+                .smartcards {
+                    flex-wrap: wrap;
+
+                    .smartcard {
+                        max-width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1024px) {
+    #smartE-bike {
+        .one {
+            display: none;
+        }
+
+        #smartE-bikebox {
+            .smarttop {
+                .smartcards {
+                    flex-wrap: wrap;
+
+                    .smartcard {
+                        max-width: 48% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Smart E-BIKE End
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1330px) {
+    .imgdiv2 {
+        display: none;
+    }
+
+    .imgdiv {
+        img {
+            width: 40%;
+
+        }
+    }
+
+}
+
+
 .active {
     display: flex !important;
 }
@@ -406,33 +679,87 @@ html {
 
                     .line_up_1 {
                         background-color: #ff004e;
-                        max-width: 70%;
+                        width: 10%;
                         min-height: 7px;
                         margin-top: -5px;
+                        transition: 2s;
+
+
                     }
 
                     .line_up_2 {
                         background-color: #ff004e;
-                        max-width: 85%;
+                        width: 10%;
                         min-height: 7px;
                         margin-top: -5px;
+                        transition: 2s;
+
+
+
                     }
 
                     .line_up_3 {
                         background-color: #ff004e;
-                        max-width: 90%;
+                        width: 10%;
                         min-height: 7px;
                         margin-top: -5px;
+                        transition: 2s;
+
+
+
                     }
 
                     .line_up_4 {
                         background-color: #ff004e;
-                        max-width: 65%;
+                        width: 10%;
                         min-height: 7px;
                         margin-top: -5px;
+                        transition: 2s;
+
+
+
                     }
                 }
             }
+        }
+
+        .city_up_right:hover {
+            .right_box_text {
+                .box_in_text {
+                    .line_up_1 {
+                        width: 70%;
+                        transition: 2s;
+                        border-bottom-right-radius: 20px;
+                        border-top-right-radius: 20px;
+
+
+                    }
+
+                    .line_up_2 {
+                        width: 85%;
+                        transition: 2s;
+                        border-bottom-right-radius: 20px;
+                        border-top-right-radius: 20px;
+
+                    }
+
+                    .line_up_3 {
+                        width: 90%;
+                        transition: 2s;
+                        border-bottom-right-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+
+                    .line_up_4 {
+                        width: 65%;
+                        transition: 2s;
+                        border-bottom-right-radius: 20px;
+                        border-top-right-radius: 20px;
+
+                    }
+                }
+            }
+
         }
     }
 
@@ -577,287 +904,26 @@ html {
     #eRiders {
 
         #eRider_up {
-            max-width: 100%;
-            p{
-                display: none;
+            .background-text {
+                text-align: center;
+                width: 100%;
+                opacity: 0.1;
+                color: gray;
+                font-size: 150px;
             }
-            h1 {
-                position: absolute;
-                top: 100px;
-                font-size: 50px;
-                z-index: 1;
+
+            p {
+                display: none;
             }
 
             #wrapper {
-                max-width: 65.5%;
-
-                #prev,
-                #next {
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    border: none;
-                    padding: 8px;
-                    cursor: pointer;
-                    position: absolute;
-                }
-
-
-                #prev {
-                    top: 65%;
-                    left: 15px;
-                    font-size: 40px;
-                    background-color: transparent;
-                    color: gray;
-                    border: none;
-                }
-
-                #prev:focus {
-                    outline: 0;
-                }
-
-                #next {
-                    top: 65%;
-                    right: 15px;
-                    font-size: 40px;
-                    background-color: transparent;
-                    color: gray;
-
-                }
-
-                #next:focus {
-                    outline: 0;
-                }
-
-                #carousel {
-                    overflow: auto;
-                    scroll-behavior: smooth;
-                    scrollbar-width: none;
-
-                    #content {
-                        display: grid;
-                        grid-auto-flow: column;
-                        margin: auto;
-                        box-sizing: border-box;
-
-                        .eRider_img_1 {
-                            overflow: hidden;
-                            width: 300px;
-                            height: 300px;
-                            transition: 0.4s;
-                            position: relative;
-
-                            .erider_hover {
-                                background-color: rgba(255, 0, 76, 0.6);
-                                width: 300px;
-                                height: 300px;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                visibility: hidden;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                gap: 10px;
-
-
-                                h3 {
-                                    font-size: 40px;
-                                    color: white;
-                                }
-
-                                .eRider_hover_btn {
-                                    height: 40px;
-                                    width: 180px;
-                                    background-color: black;
-                                    opacity: 1;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: white;
-                                    text-decoration: none;
-                                }
-
-                                .eRider_hover_btn:hover {
-                                    background-color: white;
-                                    color: black;
-                                }
-
-                            }
-                        }
-
-                        .eRider_img_1:hover {
-                            .erider_hover {
-                                visibility: visible;
-                                transition: 0.4s;
-                                z-index: 2;
-                            }
-
-                            .item {
-
-                                transition: 0.4s;
-                                transform: scale(1.1);
-
-                            }
-
-                        }
-
-
-                        .item {
-                            width: 300px;
-                            height: 300px;
-                            transition: 0.4s;
-
-                        }
-
-
-
-
-                    }
-                }
-
-                #carousel::-webkit-scrollbar {
-                    height: 0;
-                }
+                max-width: 49%;
             }
         }
 
         #eRider_down {
-            max-width: 100%;
-
             #wrapper {
-                max-width: 65.5%;
-
-                #prev,
-                #next {
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    border: none;
-                    padding: 8px;
-                    cursor: pointer;
-                    position: absolute;
-                }
-
-
-                #prev {
-                    top: 65%;
-                    left: 15px;
-                    font-size: 40px;
-                    background-color: transparent;
-                    color: gray;
-                    border: none;
-                }
-
-                #prev:focus {
-                    outline: 0;
-                }
-
-                #next {
-                    top: 65%;
-                    right: 15px;
-                    font-size: 40px;
-                    background-color: transparent;
-                    color: gray;
-
-                }
-
-                #next:focus {
-                    outline: 0;
-                }
-
-                #carousel {
-                    overflow: auto;
-                    scroll-behavior: smooth;
-                    scrollbar-width: none;
-
-                    #content {
-                        display: grid;
-                        grid-auto-flow: column;
-                        margin: auto;
-                        box-sizing: border-box;
-
-                        .eRider_img_1 {
-                            overflow: hidden;
-                            width: 300px;
-                            height: 300px;
-                            transition: 0.4s;
-                            position: relative;
-
-                            .erider_hover {
-                                background-color: rgba(255, 0, 76, 0.6);
-                                width: 300px;
-                                height: 300px;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                visibility: hidden;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                gap: 10px;
-
-
-                                h3 {
-                                    font-size: 40px;
-                                    color: white;
-                                }
-
-                                .eRider_hover_btn {
-                                    height: 40px;
-                                    width: 180px;
-                                    background-color: black;
-                                    opacity: 1;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: white;
-                                    text-decoration: none;
-                                }
-
-                                .eRider_hover_btn:hover {
-                                    background-color: white;
-                                    color: black;
-                                }
-
-                            }
-                        }
-
-                        .eRider_img_1:hover {
-                            .erider_hover {
-                                visibility: visible;
-                                transition: 0.4s;
-                                z-index: 2;
-                            }
-
-                            .item {
-
-                                transition: 0.4s;
-                                transform: scale(1.1);
-
-                            }
-
-                        }
-
-
-                        .item {
-                            width: 300px;
-                            height: 300px;
-                            transition: 0.4s;
-
-                        }
-
-
-
-
-                    }
-                }
-
-                #carousel::-webkit-scrollbar {
-                    height: 0;
-                }
+                max-width: 49%;
             }
         }
     }
@@ -884,51 +950,95 @@ html {
 
 
 
-
-
-
-
-
 // section created by Ali end 
 
 
 
 
+// horizontal pink carousel style start by ilkin
+
+#hr-carousel {
+    padding: 100px 0;
+    background-color: #DAD3C6;
+
+    @mixin white-gradient {
+        background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    $animationSpeed: 40s;
+
+    // Animation
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 10))
+        }
+    }
 
 
+    // Styling
+    .slider {
+        background-color: #ff004e;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0);
+        height: 250px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 250px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
+
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            position: absolute;
+            top: 70px;
+            width: 100%;
+
+            &:hover {
+                animation-play-state: paused;
+
+            }
+        }
+
+        .slide {
+            height: 200px;
+            width: 400px;
+            margin: 0 100px;
+            opacity: 0.5;
+
+        }
+    }
 
 
+}
 
 
-
-
-
-
-
-
-// ----------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -------------------------------------------------
 // horizontal pink carousel style end by ilkin
+
+
 
 
 
@@ -957,6 +1067,7 @@ html {
             font-size: 150px;
         }
 
+
         h1 {
             text-align: center;
             position: absolute;
@@ -966,7 +1077,7 @@ html {
         }
 
         #wrapper {
-            width: 90%;
+            width: 88%;
             margin: auto;
 
             #prev,
@@ -1114,7 +1225,7 @@ html {
         background-color: #dcd8cd;
 
         #wrapper {
-            width: 90%;
+            width: 88%;
             margin: auto;
 
             #prev,
@@ -1250,6 +1361,7 @@ html {
     }
 }
 
+
 #accessories {
     padding: 100px 0;
     display: flex;
@@ -1267,61 +1379,159 @@ html {
         }
     }
 
-    swiper-container {
-        width: 80%;
+
+    #wrapper {
+        width: 100%;
+        position: relative;
+        max-width: 86%;
         margin: auto;
-        height: 500px;
-        cursor: grab;
 
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background:#ebe7e2;
-            display: flex;
-            gap: 0;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
+        #slide {
+            overflow: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            height: 600px;
 
-            .card {
-                background-color: #E5E1D8;
+            #slide-inside {
+                display: grid;
+                grid-auto-flow: column;
+                margin: auto;
+                box-sizing: border-box;
+                height: 100%;
 
-                .image {
-                    height: 60%;
-                    overflow: hidden;
+                .card {
+                    background-color: #E5E1D8;
+                    ;
+                    width: 490px;
+                    height: 500px;
+                    border: none;
 
-                    img {
-                        width: 100%;
-                        background-color: #E5E1D8;
-                        transition: 0.5s;
+                    .image {
+                        height: 70%;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            background-color: #E5E1D8;
+                            transition: 0.5s;
+                        }
+
+
                     }
 
-                }
-                &:hover{
-                    img{
-                        transform: scale(1.1);
-                        transition: 0.5s;
+                    .card-body {
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40%;
+                    }
+
+
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                            transition: 0.5s;
+                        }
                     }
                 }
 
-                .card-body {
-                    height: 200px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 40%;
-                }
             }
 
 
+
+
         }
+
+        #slide::-webkit-scrollbar {
+            height: 0;
+        }
+
+        #prevbtn,
+        #nextbtn {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: white;
+            border: none;
+            padding: 8px;
+            border-radius: 50%;
+            outline: 0;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #prevbtn {
+            top: 50%;
+            left: 0;
+            transform: translate(50%, -50%);
+            display: none;
+        }
+
+        #nextbtn {
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+
+
 
     }
 
 
 
 }
+
+// ACCESSORIES section carousel style by ilkin end
+
+
+
+
+
+// ACCESSORIES section carousel responsive by ilkin start
+
+
+@media screen and (max-width: 568px) {
+    #accessories {
+        #wrapper {
+            #slide {
+                height: 300px;
+
+                #slide-inside {
+                    .card {
+                        width: 290px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 569px) and (max-width: 992px) {
+    #accessories {
+        #wrapper {
+            #slide {
+                height: 400px;
+
+                #slide-inside {
+                    .card {
+                        width: 390px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// ACCESSORIES section carousel responsive by ilkin end
+
 
 
 
@@ -1356,49 +1566,103 @@ html {
         overflow: hidden;
         position: relative;
         width: 100%;
+        position: relative;
+        margin: auto;
 
-        &::before,
-        &::after {
-            @include white-gradient;
-            content: "";
-            height: 250px;
-            position: absolute;
-            width: 200px;
-            z-index: 2;
-        }
+        #slide {
+            overflow: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            height: 600px;
 
-        &::after {
-            right: 0;
-            top: 0;
-            transform: rotateZ(180deg);
-        }
+            #slide-inside {
+                display: grid;
+                grid-auto-flow: column;
+                margin: auto;
+                box-sizing: border-box;
+                height: 100%;
 
-        &::before {
-            left: 0;
-            top: 0;
-        }
+                .card {
+                    background-color: #E5E1D8;
+                    ;
+                    width: 550px;
+                    height: 600px;
+                    border: none;
 
-        .slide-track {
-            animation: scroll $animationSpeed linear infinite;
-            display: flex;
-            position: absolute;
-            top: 70px;
-            width: 100%;
+                    .image {
+                        height: 70%;
+                        overflow: hidden;
 
-            &:hover {
-                animation-play-state: paused;
+                        img {
+                            width: 100%;
+                            background-color: #E5E1D8;
+                            transition: 0.5s;
+                        }
+
+
+                    }
+
+                    .card-body {
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40%;
+                    }
+
+
+
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                            transition: 0.5s;
+                        }
+                    }
+                }
 
             }
-        }
 
-        .slide {
-            height: 200px;
-            width: 400px;
-            margin: 0 100px;
-            opacity: 0.5;
+
+
 
         }
+
+        #slide::-webkit-scrollbar {
+            height: 0;
+        }
+
+        #prevbtn,
+        #nextbtn {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: white;
+            border: none;
+            padding: 8px;
+            border-radius: 50%;
+            outline: 0;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #prevbtn {
+            top: 50%;
+            left: 0;
+            transform: translate(50%, -50%);
+            display: none;
+        }
+
+        #nextbtn {
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+
+
+
     }
+
 
 
 }
@@ -1406,8 +1670,1041 @@ html {
 // ACCESSORIES section carousel style by ilkin end
 
 
-// ACCESSORIES section carousel responsive by ilkin start
 
 
 
-// ACCESSORIES section carousel responsive by ilkin end
+// latest products section style started by ilkin
+
+#latest-products {
+    width: 100%;
+    height: fit-content;
+    font-family: var(--font-heading-family);
+    background-color: #EBE7E2;
+
+    .name {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+        padding: 20px 0;
+
+        h2 {
+            font-weight: bold;
+        }
+    }
+
+    .bikes {
+        display: flex;
+        height: 100%;
+
+        .left {
+            width: 60%;
+            height: 100%;
+            padding: 0 30px;
+
+            swiper-container {
+                width: 100%;
+                height: 1000px;
+                min-height: 90%;
+
+                swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background-color: #EBE7E2;
+                    display: flex;
+                    justify-content: center;
+                    // align-items: center;
+
+                    // height: 100%;
+                    .properties {
+                        width: 400px;
+                        padding: 200px 0;
+
+                        h2 {
+                            font-weight: bold;
+                        }
+
+                        p {
+                            margin: 30px 0;
+                            font-weight: bold;
+                        }
+
+                    }
+                }
+
+                .bg-img-1 {
+                    background-image: url('https://dt-ezyrider.myshopify.com/cdn/shop/files/home-image-2-2.png?v=1677134913&width=960');
+                }
+
+                .bg-img-2 {
+                    background-image: url('https://dt-ezyrider.myshopify.com/cdn/shop/files/Component_5_1_0192090b-e3d3-4348-b357-3c4ad59f0f6f.png?v=1669613521&width=960');
+                }
+
+                .swiper-image {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        .rightSide {
+            width: 40%;
+            height: 800px;
+            padding: 100px 0;
+
+            .up {
+                width: 90%;
+                margin-bottom: 100px;
+            }
+
+            .right {
+                height: 50%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                text-align: center;
+
+                .design {
+                    width: 400px;
+                }
+
+                .capacity {
+                    // width: 350px;
+                    padding: 0 50px 0 0;
+
+                    .property-of-bike {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h5 {
+                            font-weight: bold;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+// latest products section style ended by ilkin
+
+
+
+
+// eBriss section stared 
+#eBriss {
+    background-color: #ebe7e2;
+    min-width: 100%;
+    min-height: 99vh;
+
+    .eBriss_div_up {
+        min-width: 100%;
+        min-height: 33vh;
+        display: flex;
+
+        .up-div_left_box {
+            min-width: 50%;
+            min-height: 33vh;
+            display: flex;
+
+            .imgAndHover {
+                width: 33.33%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 33vh;
+
+                }
+
+                .eBriss_img_hover_box {
+                    position: absolute;
+                    width: 101%;
+                    height: 33vh;
+                    background-color: #ff004cd0;
+                    visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    transition: 0.3s;
+                    transform: rotateX(90deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: hidden;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: hidden;
+
+                    }
+                }
+            }
+
+            .imgAndHover:hover {
+                .eBriss_img_hover_box {
+                    visibility: visible;
+                    transition: 0.5s;
+                    transform: rotateX(0deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: visible;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: visible;
+
+                    }
+                }
+            }
+
+        }
+
+        .up-div_right_box {
+            background-color: rgb(255, 0, 43);
+            min-width: 50%;
+            min-height: 33vh;
+            display: flex;
+
+            .imgAndHover {
+                width: 33.33%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 33vh;
+
+                }
+
+                .eBriss_img_hover_box {
+                    position: absolute;
+                    width: 101%;
+                    height: 33vh;
+                    background-color: #ff004cd0;
+                    visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    transition: 0.3s;
+                    transform: rotateX(90deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: hidden;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: hidden;
+
+                    }
+                }
+            }
+
+
+            .imgAndHover:hover {
+                .eBriss_img_hover_box {
+                    visibility: visible;
+                    transition: 0.5s;
+                    transform: rotateX(0deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: visible;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: visible;
+
+                    }
+                }
+            }
+
+            .imgAndHoverBİg {
+                width: 66.66%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 33vh;
+
+                }
+
+                .eBriss_img_hover_box {
+                    position: absolute;
+                    width: 101%;
+                    height: 33vh;
+                    background-color: #ff004cd0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    transition: 0.3s;
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .eBriss_div_middle {
+        min-width: 100%;
+        min-height: 33vh;
+        display: flex;
+
+        .up-div_left_box {
+            min-width: 50%;
+            min-height: 33vh;
+            display: flex;
+
+            .imgAndHover {
+                width: 33.33%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 33vh;
+
+                }
+
+                .eBriss_img_hover_box {
+                    position: absolute;
+                    width: 101%;
+                    height: 33vh;
+                    background-color: #ff004cd0;
+                    visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    transition: 0.3s;
+                    transform: rotateX(90deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: hidden;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: hidden;
+
+                    }
+                }
+            }
+
+            .imgAndHover:hover {
+                .eBriss_img_hover_box {
+                    visibility: visible;
+                    transition: 0.5s;
+                    transform: rotateX(0deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: visible;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: visible;
+
+                    }
+                }
+            }
+
+        }
+
+        .up-div_right_box {
+            background-color: rgb(255, 0, 43);
+            min-width: 50%;
+            min-height: 33vh;
+            display: flex;
+
+            .imgAndHover {
+                width: 33.33%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 33vh;
+
+                }
+
+                .eBriss_img_hover_box {
+                    position: absolute;
+                    width: 101%;
+                    height: 33vh;
+                    background-color: #ff004cd0;
+                    visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    transition: 0.3s;
+                    transform: rotateX(90deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: hidden;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: hidden;
+
+                    }
+                }
+            }
+
+
+            .imgAndHover:hover {
+                .eBriss_img_hover_box {
+                    visibility: visible;
+                    transition: 0.5s;
+                    transform: rotateX(0deg);
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                        visibility: visible;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+                        visibility: visible;
+
+                    }
+                }
+            }
+
+            .imgAndHoverBİg {
+                width: 66.66%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 33vh;
+
+                }
+
+                .eBriss_img_hover_box {
+                    position: absolute;
+                    width: 101%;
+                    height: 33vh;
+                    background-color: #ff004cd0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    transition: 0.3s;
+
+                    i {
+                        font-size: 40px;
+                        color: white;
+                    }
+
+                    a {
+                        font-size: 40px;
+                        color: white;
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .eBriss_div_down {
+        min-width: 100%;
+        min-height: 33vh;
+        display: flex;
+
+        .down_div_left {
+            min-width: 70%;
+            min-height: 33vh;
+            display: flex;
+
+            .velo_animation {
+                min-width: 35%;
+                min-height: 33vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 300px;
+                }
+            }
+
+            .down_div_left_text_box {
+                min-width: 65%;
+                min-height: 33vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 0px 0px 50px;
+
+                p {
+                    font-size: 30px;
+                }
+
+                .velo_text_btn {
+                    border-bottom: 2px solid gray;
+                    max-width: 70px;
+                    min-height: 34px;
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+        .down_div_right {
+            min-width: 30%;
+            min-height: 33vh;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+
+
+// latest products section responsive started by ilkin
+
+@media screen and (max-width: 821px) {
+    #latest-products {
+        .bikes {
+            flex-wrap: wrap;
+
+            .left {
+                width: 100%;
+                height: fit-content;
+
+                .swiper-image {
+                    background-size: 100%;
+                    background-position: top;
+
+                }
+            }
+
+            .rightSide {
+                width: 90%;
+                margin: auto;
+
+                .right {
+                    flex-wrap: wrap;
+
+                    img {
+                        margin: auto;
+                    }
+
+                    .design {
+                        width: 100%;
+                    }
+
+                    .capacity {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 822px) and (max-width: 1124px) {
+    #latest-products {
+        .bikes {
+            flex-wrap: wrap;
+
+            .left {
+                width: 100%;
+            }
+
+            .rightSide {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1125px) and (max-width: 1278px) {
+    #latest-products {
+        .rightSide {
+            .right {
+                flex-wrap: wrap;
+                align-items: center;
+
+                img {
+                    margin: auto;
+                }
+
+                .design {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .capacity {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// latest products section responsive started by ilkin
+
+
+.up-div_right_box {
+    background-color: rgb(255, 0, 43);
+    min-width: 50%;
+    min-height: 33vh;
+    display: flex;
+
+    .imgAndHover {
+        width: 33.33%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 33vh;
+
+        }
+
+        .eBriss_img_hover_box {
+            position: absolute;
+            width: 101%;
+            height: 33vh;
+            background-color: #ff004cd0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            transition: 0.3s;
+            transform: rotateX(90deg);
+
+            i {
+                font-size: 40px;
+                color: white;
+                visibility: hidden;
+            }
+
+            a {
+                font-size: 40px;
+                color: white;
+                text-decoration: none;
+                visibility: hidden;
+
+            }
+        }
+    }
+
+
+    .imgAndHover:hover {
+        .eBriss_img_hover_box {
+            visibility: visible;
+            transition: 0.5s;
+            transform: rotateX(0deg);
+
+            i {
+                font-size: 40px;
+                color: white;
+                visibility: visible;
+            }
+
+            a {
+                font-size: 40px;
+                color: white;
+                text-decoration: none;
+                visibility: visible;
+
+            }
+        }
+    }
+
+    .imgAndHoverBİg {
+        width: 66.66%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 33vh;
+
+        }
+
+        .eBriss_img_hover_box {
+            position: absolute;
+            width: 101%;
+            height: 33vh;
+            background-color: #ff004cd0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            transition: 0.3s;
+
+            i {
+                font-size: 40px;
+                color: white;
+            }
+
+            a {
+                font-size: 40px;
+                color: white;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1320px) {
+    #eBriss {
+        .eBriss_div_up {
+            flex-direction: column;
+        }
+
+        .eBriss_div_middle {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 975px) {
+    #eBriss {
+        .eBriss_div_up {
+            .up-div_left_box {
+                flex-direction: column;
+
+                .imgAndHover {
+                    img {
+                        width: 300%;
+                        height: 300%;
+                    }
+
+                    .eBriss_img_hover_box {
+                        width: 300%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                }
+
+            }
+
+            .up-div_right_box {
+                flex-direction: column;
+
+                .imgAndHover {
+                    img {
+                        width: 300%;
+                        height: 300%;
+                    }
+
+                    .eBriss_img_hover_box {
+                        width: 300%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .imgAndHoverBİg {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 66vh;
+
+                    }
+
+                    .eBriss_img_hover_box {
+                        width: 101%;
+                        height: 66vh;
+
+
+                    }
+                }
+            }
+        }
+
+        .eBriss_div_middle {
+            flex-direction: column;
+
+            .up-div_left_box {
+                flex-direction: column;
+
+                .imgAndHover {
+                    img {
+                        width: 300%;
+                        height: 300%;
+                    }
+
+                    .eBriss_img_hover_box {
+                        width: 300%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .up-div_right_box {
+                flex-direction: column;
+
+                .imgAndHover {
+                    img {
+                        width: 300%;
+                        height: 300%;
+                    }
+
+                    .eBriss_img_hover_box {
+                        width: 300%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .eBriss_div_down {
+
+            .down_div_right {
+                display: none;
+            }
+        }
+    }
+}
+
+// eBriss section end 
+
+// updates section started 
+#updates {
+    background-color: #dcd8cd;
+    max-width: 100%;
+    min-height: 100vh;
+
+    .updates_text {
+        background-color: #dcd8cd;
+        max-width: 100%;
+        min-height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        p {
+            font-size: 40px;
+            max-width: 550px;
+            text-align: center;
+            color: black;
+            z-index: 1;
+
+        }
+
+        h1 {
+            z-index: 0;
+            position: absolute;
+            font-size: 170px;
+            color: #DAD3C6;
+            opacity: 0.9;
+        }
+    }
+
+    .news_cards_box {
+        max-width: 100%;
+        max-height: 80vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        .news_card {
+            padding: 30px 20px;
+            margin-top: 30px;
+            min-width: 32%;
+            min-height: 80vh;
+
+            .cards_img {
+                min-height: 35vh;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 35vh;
+                    transition: 0.5s;
+
+                }
+            }
+
+            .cards_text {
+                color: black;
+                min-height: 45vh;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .text_upper {
+                    margin-top: 10px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: black;
+                }
+
+                h5 {
+                    margin-top: 10px;
+
+                }
+
+                h5:hover {
+                    color: #ff004e;
+                    cursor: pointer;
+                }
+
+                span {
+                    max-width: 400px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    width: 100px;
+
+                    .card_btn {
+                        height: 2px;
+                        width: 100px;
+                        margin-top: 5px;
+                        background-color: black;
+                        transition: 1s;
+
+                    }
+                }
+
+                a:hover {
+                    .card_btn {
+                        width: 40px;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+
+        .news_card:hover {
+            .cards_img {
+                overflow: hidden;
+
+                img {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 1389px) {
+    #updates {
+        background-color: #dcd8cd;
+        max-width: 100%;
+        min-height: 200vh;
+
+        .updates_text {
+
+            h1 {
+                display: none;
+            }
+        }
+
+        .news_cards_box {
+            grid-template-columns: auto auto;
+
+        }
+    }
+}
+
+@media screen and (max-width: 607px) {
+    #updates {
+        min-height: 300vh;
+
+        .news_cards_box {
+            grid-template-columns: auto;
+        }
+    }
+}
+
+// updates section end 

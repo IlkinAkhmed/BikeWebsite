@@ -9,17 +9,17 @@ const clickBar = document.querySelector('.click_bar')
 const blurPage = document.querySelector('.page_blur')
 
 barIcon.addEventListener('click', () => {
-    clickBar.style.display = 'block'
-    barIcon.style.display = 'none'
-    closeIcon.style.display = 'block'
-    blurPage.style.display = 'block'
+  clickBar.style.display = 'block'
+  barIcon.style.display = 'none'
+  closeIcon.style.display = 'block'
+  blurPage.style.display = 'block'
 
 })
 closeIcon.addEventListener('click', () => {
-    clickBar.style.display = 'none'
-    barIcon.style.display = 'block'
-    closeIcon.style.display = 'none'
-    blurPage.style.display = 'none'
+  clickBar.style.display = 'none'
+  barIcon.style.display = 'block'
+  closeIcon.style.display = 'none'
+  blurPage.style.display = 'none'
 
 })
 // hamburger clicked open navbar end
@@ -28,12 +28,46 @@ const SearchInput = document.querySelector('.navbar_search')
 const SearchLine = document.querySelector('.search_box')
 
 SearchInput.addEventListener('click', () => {
-    SearchLine.style.borderBottom = '2px solid #ff004e'
+  SearchLine.style.borderBottom = '2px solid #ff004e'
 })
 
 // search line end 
 
 // edited By Ali end 
+
+
+// accessories section by ilkin start
+const card_gap = 16;
+
+const slide = document.getElementById("slide"),
+  slide_inside = document.getElementById("slide-inside"),
+  nextbtn = document.getElementById("nextbtn"),
+  prevbtn = document.getElementById("prevbtn");
+
+nextbtn.addEventListener("click", e => {
+  slide.scrollBy(width + gap, 0);
+  if (slide.scrollWidth !== 0) {
+    prevbtn.style.display = "flex";
+  }
+  if (slide_inside.scrollWidth - width - gap <= slide.scrollLeft + width) {
+    nextbtn.style.display = "none";
+  }
+});
+prevbtn.addEventListener("click", e => {
+  slide.scrollBy(-(width + gap), 0);
+  if (slide.scrollLeft - width - gap <= 0) {
+    prevbtn.style.display = "none";
+  }
+  if (!slide_inside.scrollWidth - width - gap <= slide.scrollLeft + width) {
+    nextbtn.style.display = "flex";
+  }
+});
+
+let cardWidth = slide.offsetWidth;
+window.addEventListener("resize", e => (width = slide.offsetWidth));
+
+
+// accessories section by ilkin end
 
 
 
@@ -148,13 +182,13 @@ const Search = document.getElementById("search")
 const opensearch = document.getElementById("opensearch")
 const exitsearch = document.querySelector(".fa-circle-xmark")
 
-opensearch.addEventListener("click",function(e){
-    e.preventDefault()
-    Search.classList.add("active")
+opensearch.addEventListener("click", function (e) {
+  e.preventDefault()
+  Search.classList.add("active")
 })
 
-exitsearch.addEventListener("click",function(){
-    Search.classList.remove("active")
+exitsearch.addEventListener("click", function () {
+  Search.classList.remove("active")
 })
 // Open and Close Search end
 // Ahmad Edited End
