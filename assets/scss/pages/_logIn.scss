@@ -25,6 +25,7 @@
             background-color: transparent;
             border: none;
             border-bottom: 2px solid black;
+            outline: none;
         }
         a{
             text-align: center;
@@ -78,6 +79,9 @@
             font-size: 10px !important;
         }
     }
+}
+.active{
+    display: flex;
 }
 // Login respinsive end
 // Login by Ahmad end

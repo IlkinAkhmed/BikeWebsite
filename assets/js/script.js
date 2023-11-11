@@ -1,4 +1,3 @@
-
 // edited By Ali start
 
 // hamburger clicked open navbar start
