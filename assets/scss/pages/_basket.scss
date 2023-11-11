@@ -1,168 +1,270 @@
-#contact {
-    padding-top: 80px;
-    width: 100%;
-    min-height: 120vh;
-    background-color: #ebe7e2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
 
-    .contactdiv {
-        width: 90%;
-        height: 100vh;
+#basket {
+    height: 100%;
+    min-height: 1000px;
+    background-color: #EBE7E2;
+    padding: 150px 50px;
+    font-family: 'Source Code Pro', monospace;
+
+    .head-of-basket {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
 
-        .contacthead {
+        h1 {
             font-size: 40px;
         }
 
-        .contactbox {
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            height: fit-content;
-            .contactcards {
-                padding: 40px;
-                // width: 33.4%;
-                height: 180px;
-                box-shadow: 0 0 8px rgb(0 0 0 / 50%);
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-wrap: wrap;
+        a {
+            color: black;
+            position: relative;
 
-                h4 {
-                    font-size: 32px;
-                }
-
-                p {
-                    font-size: 20px;
-                }
-            }
-        }
-
-        .contactarea {
-            width: 100%;
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 30px;
-
-            input {
-                background-color: transparent;
-                border: none;
-                border-bottom: 2px solid black;
-                outline: none;
-                font-size: 20px;
-
-            }
-
-            .contactfield {
-                margin-top: 20px;
-                display: flex;
-                justify-content: space-between;
-
-                input {
-                    width: 45%;
-                }
-            }
-
-            textarea {
-                background-color: transparent;
-                border: none;
-                border-bottom: 2px solid black;
-                outline: none;
-                font-size: 20px;
-
-            }
-
-            button {
-                width: 120px;
-                height: 40px;
-                color: white;
-                background-color: #ff004e;
-                transition: 0.5s;
-                border: none;
-
-            }
-
-            button:hover {
+            .bottom-line {
+                position: absolute;
+                bottom: -5px;
+                width: 100%;
+                height: 2px;
                 background-color: black;
                 transition: 0.5s;
-                cursor: pointer;
+            }
+
+            &:hover .bottom-line {
+                width: 30%;
+                transition: 1s;
             }
         }
     }
 
-}
+    .name-of-properties {
+        display: flex;
+        padding: 20px 30px;
 
-@media screen and (max-width: 900px) {
-    #contact {
-        .contactdiv {
-            .contacthead {
-                font-size: 30px !important;
+        .product-text {
+            width: 60%;
+
+            h2 {
+                color: rgb(48, 47, 47);
             }
+        }
 
-            .contactcards {
-                width: 48%;
+        .quant-and-total-text {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
 
-                h4 {
-                    font-size: 25px !important;
-                }
-
-                p {
-                    font-size: 10px !important;
-                }
-            }
-
-            .contactarea {
-                h2 {
-                    font-size: 20px;
-                }
+            h2 {
+                color: rgb(48, 47, 47);
             }
         }
     }
-}
 
-@media screen and (max-width: 400px) {
+    .basketWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
 
-    #contact {
-        .contactdiv {
-            .contacthead {
-                font-size: 20px !important;
+        .basketCard { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            min-height: 80%;
+            width: 100%;
+
+            .product {
+                width: 75%;
+                display: flex;
+                gap: 60px;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .image-and-properties {
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .image {
+                        width: 45%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .prod-properties {
+                        padding: 40px 0;
+                        width: 55%;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .type {
+                            font-size: 13px;
+                        }
+                    }
+
+                }
+
+                .countAndRemove {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    width: 20%;
+
+                    .count {
+                        height: 50px;
+                        width: 130px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        border: 2px solid black;
+
+                        p {
+                            cursor: pointer;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+
+                    }
+
+                    .fa-trash-can {
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover {
+                            transform: scale(1.5);
+                            transition: 0.5s;
+                        }
+                    }
+                }
             }
 
-            .contactcards {
+            .total-price {
+                height: 200px;
+                width: 20%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+
+            }
+        }
+    }
+
+    .order {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 100px 0 0 0;
+
+        .order-area {
+            width: 25%;
+
+            .label {
+                margin-bottom: 20px;
+                color: rgb(70, 70, 70);
+                font-weight: bold;
+            }
+
+            .text-area {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid rgb(70, 70, 70);
+            }
+        }
+
+        .subtotal {
+            width: 25%;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .pink-button {
                 width: 100%;
+            }
+        }
+    }
 
-                h4 {
-                    font-size: 18px !important;
-                }
+}
 
-                p {
-                    font-size: 8px !important;
+
+@media screen and (max-width: 568px) {
+    #basket{
+        padding-left: 10px;
+        padding-right: 10px;
+        .head-of-basket{
+            flex-wrap: wrap;
+            gap: 40px;
+            h1{
+                width: 100%;
+            }
+        }
+        .basketWrapper{
+            .basketCard{
+                .product{
+                    
+                    .image-and-properties{
+                        flex-wrap: wrap;
+                        .image{
+                            width: 90%;
+                        }
+                        .prod-properties{
+                            width: 100%;
+                        }
+                    }
                 }
             }
+        }
+        .order{
+            flex-wrap: wrap;
+            gap: 40px;
+            .order-area{
+                width: 100%;
+            }
+            .subtotal{
+                width: 100%;
+            }
+        }
+    }
+}
 
-            .contactarea {
-                display: none !important;
-                
-                h2 {
-                    font-size: 10px !important;
+@media screen and (max-width: 992px) {
+    #basket{
+        .quant-and-total-text{
+            width: 20%;
+            // justify-content: flex-end;
+            .quantity{
+                display: none;
+            }
+            .total{
+                display: flex;
+                width: 250px;
+                justify-content: flex-end;
+            }
+            
+        }
+        .basketWrapper{
+            .basketCard{
+                .product{
+                    flex-wrap: wrap;
+                    
+                    .image-and-properties{
+                        width: 100%;
+                    }
+                    .countAndRemove{
+                        justify-content: center;
+                        width: 100%;
+                    }
                 }
-
-                button {
-                    width: 50px;
-                    font-size: 10px;
-                }
-               
             }
         }
     }
