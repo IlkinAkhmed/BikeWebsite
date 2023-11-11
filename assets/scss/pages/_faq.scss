@@ -1,0 +1,229 @@
+#faq {
+    background-color: #dcd8cd;
+    max-width: 100%;
+    min-height: 100vh;
+
+    p {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .faq_text {
+        max-width: 100%;
+        display: flex;
+        align-items: end;
+        min-height: 30vh;
+
+        p {
+            font-size: 70px;
+            padding: 0px 50px;
+            color: black;
+
+        }
+    }
+
+    .question_text {
+        max-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        p {
+            font-size: 70px;
+            color: black;
+        }
+
+        .question_accordion {
+            width: 40%;
+
+            .order,
+            .shipping,
+            .refund,
+            .cancel,
+            .success {
+                transition: 0.5s;
+                background-color: #dcd8cd;
+                max-width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 60px 0px 20px;
+                align-items: center;
+                cursor: pointer;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    i {
+                        font-size: 20px;
+                        color: #ff004cd0;
+
+
+                    }
+
+                    p {
+                        margin-top: 10px;
+
+                    }
+                }
+
+                i {
+                    font-size: 12px;
+                    color: black;
+
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            .order:hover {
+                transition: 0.5s;
+                background-color: #E5E1D8;
+
+                div {
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .shipping:hover {
+                transition: 0.5s;
+                background-color: #E5E1D8;
+
+                div {
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+            .refund:hover {
+                transition: 0.5s;
+                background-color: #E5E1D8;
+
+                div {
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+            .cancel:hover {
+                transition: 0.5s;
+                background-color: #E5E1D8;
+
+                div {
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+            .success:hover {
+                transition: 0.5s;
+                background-color: #E5E1D8;
+
+                div {
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+            .order_submenu,
+            .shipping_submenu,
+            .refund_submenu,
+            .cancel_submenu,
+            .success_submenu {
+                background-color: #E5E1D8;
+                font-size: 14px;
+                display: none;
+                padding: 10px;
+            }
+
+            .orderOpen,
+            .shippingOpen,
+            .refundOpen,
+            .cancelOpen,
+            .successOpen {
+                display: block;
+            }
+
+            .orderOpenTxt,
+            .shippingOpenTxt,
+            .refundOpenTxt,
+            .cancelOpenTxt,
+            .successOpenTxt {
+                color: #ff004cd0;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 962px) {
+    #faq {
+
+        .faq_text {
+            max-width: 100%;
+            display: flex;
+            align-items: end;
+            min-height: 10vh;
+
+        }
+
+        .question_text {
+
+            .question_accordion {
+                width: 40%;
+
+                .order,
+                .shipping,
+                .refund,
+                .cancel,
+                .success {
+                    div {
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 731px) {
+    #faq {
+        background-color: #dcd8cd;
+        max-width: 100%;
+        min-height: 100vh;
+        p {
+            font-size: 40px;
+        }
+        .faq_text {
+            p {
+                font-size: 40px;
+            }
+        }
+    
+        .question_text {
+            
+            .question_accordion {
+                width: 90%;
+    
+            }
+        }
+    }
+}

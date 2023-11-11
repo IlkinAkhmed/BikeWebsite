@@ -89,7 +89,10 @@ html {
                         width: 60%;
                         padding: 50px 100px 50px 0;
                         backdrop-filter: blur(10px);
-
+                      
+                        }
+                        
+                    
 
 
                         :first-child {
@@ -99,7 +102,7 @@ html {
                         }
 
                         h1 {
-                            font-family: 'Alice', serif;
+                            font-family: 'Quantico', serif;
                             font-weight: bold;
                             margin: 30px 0;
                         }
@@ -179,7 +182,7 @@ html {
         }
 
     }
-}
+
 
 // style for home section by ilkin end
 
@@ -1021,15 +1024,28 @@ html {
                 animation-play-state: paused;
 
             }
+
+            .slide {
+                height: 200px;
+                width: 400px;
+                margin: 0 100px;
+                opacity: 0.5;
+
+                img {
+                    fill: white;
+                }
+
+                // img:hover{
+                //     cursor: pointer;
+                //     fill: white;
+                // }
+            }
+
+
         }
 
-        .slide {
-            height: 200px;
-            width: 400px;
-            margin: 0 100px;
-            opacity: 0.5;
 
-        }
+
     }
 
 
@@ -2203,13 +2219,29 @@ html {
                 }
 
                 .velo_text_btn {
-                    border-bottom: 2px solid gray;
                     max-width: 70px;
                     min-height: 34px;
                     text-decoration: none;
                     color: rgb(0, 0, 0);
                     font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .eBriss_line{
+                    height: 2px;
+                    width: 80px;
+                    background-color: black;
+                    transition: 0.6s;
+
                 }
+                }
+                .velo_text_btn:hover{
+                    .eBriss_line{
+                        width: 20px;
+                        transition: 0.6s;
+                    }
+                }
+                
 
             }
         }
@@ -2586,8 +2618,8 @@ html {
     }
 
     .news_cards_box {
-        max-width: 100%;
-        max-height: 80vh;
+        // max-width: 100%;
+        // max-height: 80vh;
         display: grid;
         grid-template-columns: auto auto auto;
 
@@ -2654,7 +2686,10 @@ html {
                 }
 
                 a:hover {
+                    color: #ff004e;
+
                     .card_btn {
+                        background-color: #ff004e;
                         width: 40px;
                         transition: 1s;
                     }
@@ -2708,3 +2743,213 @@ html {
 }
 
 // updates section end 
+
+// passion section started 
+#passion {
+    background-color: #EBE7E2;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    .passsion_left {
+        min-width: 50%;
+        min-height: 100vh;
+        padding: 60px 0px 0px 60px;
+        position: relative;
+
+
+        .passsion_left_box_up {
+            max-width: 100%;
+            min-height: 30vh;
+
+            h2 {
+                position: absolute;
+                font-size: 180px;
+                max-width: 100%;
+                top: 0px;
+                color: #DAD3C6;
+                opacity: 0.4;
+                z-index: 0;
+            }
+
+            h1 {
+                position: absolute;
+                font-size: 60px;
+                z-index: 1;
+                opacity: 1;
+            }
+
+            p {
+                position: absolute;
+
+                font-size: 19px;
+                max-width: 80%;
+                top: 170px;
+            }
+        }
+
+        .passsion_left_box_down {
+            max-width: 100%;
+            min-height: 62vh;
+
+            h2 {
+                max-width: 100%;
+                min-height: 10vh;
+            }
+
+            .passion_text_box {
+                max-width: 100%;
+                min-height: 52vh;
+                display: flex;
+
+                .text_box_left,
+                .text_box_right {
+                    min-width: 50%;
+                    min-height: 52vh;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1px;
+
+                    div {
+                        max-width: 80%;
+                        min-height: 40px;
+
+
+                        p {
+                            margin-top: 12px;
+                            font-size: 20px;
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            transition: 0.5s;
+
+                            i {
+                                transition: 0.5s;
+
+                                transform: rotate(45deg);
+                                font-size: 20px;
+                            }
+                        }
+
+                        p:hover {
+                            transition: 0.5s;
+                            color: #ff004e;
+
+                            padding: 0px 10px;
+
+                            i {
+                                transition: 0.5s;
+
+                                color: #ff004e;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .passsion_right {
+        padding: 30px 0px;
+        min-width: 50%;
+        min-height: 100vh;
+
+        .mySwiper {
+            img {
+                max-width: 90%;
+            }
+
+
+            .passion_right_box_text {
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    .passion_line {
+                        transition: 1.2s;
+
+                        height: 2px;
+                        width: 14%;
+                        background-color: black;
+                    }
+                }
+
+                a:hover {
+                    .passion_line {
+                        width: 7%;
+                        transition: 1.2s;
+                    }
+                }
+
+                h2 {
+                    margin-top: 17px;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1115px) {
+    #passion {
+        .passsion_left {
+            .passsion_left_box_up {
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    top: 180px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 932px) {
+    #passion {
+        flex-direction: column;
+
+        .passsion_left {
+            .passsion_left_box_up {
+                h2 {
+                    display: none;
+                }
+
+                h1 {
+                    font-size: 17px;
+                }
+
+                p {
+                    top: 90px;
+                }
+            }
+
+            .passsion_left_box_down {
+                h2 {
+                    font-size: 20px;
+                }
+
+                .passion_text_box {
+
+                    .text_box_left,
+                    .text_box_right {
+                        div {
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// passion section end 
