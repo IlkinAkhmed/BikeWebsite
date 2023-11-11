@@ -2684,6 +2684,10 @@ html {
     font-size: 10px !important;
   }
 }
+.active {
+  display: flex;
+}
+
 #search {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -2739,4 +2743,367 @@ html {
   right: 0;
   color: white;
   font-size: 50px;
+}
+
+#shop {
+  padding-top: 80px;
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  background-color: #e5e2d8;
+}
+#shop .shopcontainer {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+#shop .shopcontainer .shophead {
+  font-size: 50px;
+  height: 8%;
+}
+#shop .shopcontainer .shopbottom {
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+}
+#shop .shopcontainer .shopbottom .rightfilter {
+  display: none;
+  width: 60%;
+  height: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+#shop .shopcontainer .shopbottom .rightfilter #filterandsort {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+#shop .shopcontainer .shopbottom .rightfilter #filterandsort:hover {
+  cursor: pointer;
+}
+#shop .shopcontainer .shopbottom .rightfilter #filterandsort:hover i {
+  color: #ff004e;
+}
+#shop .shopcontainer .shopbottom .rightfilter #filterandsort:hover span {
+  text-decoration: underline;
+  color: #ff004e;
+}
+#shop .shopcontainer .shopbottom .features {
+  width: 20%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#shop .shopcontainer .shopbottom .features .filterarea {
+  min-height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #avopener,
+#shop .shopcontainer .shopbottom .features .filterarea #priceopener {
+  cursor: pointer;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #avopen {
+  display: none;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #avopen li {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #avopen li input {
+  background-color: transparent;
+  border: none;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #priceopen {
+  display: none;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #priceopen li {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #priceopen li span {
+  font-size: 18px;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #priceopen .inputs {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#shop .shopcontainer .shopbottom .features .filterarea #priceopen .inputs input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 45%;
+  border-bottom: 1px solid black;
+}
+#shop .shopcontainer .shopbottom .features .bikecategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 20%;
+}
+#shop .shopcontainer .shopbottom .features .bikecategory h5 {
+  font-size: 25px;
+}
+#shop .shopcontainer .shopbottom .features .bikecategory .bikeacc {
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#shop .shopcontainer .shopbottom .features .bikecategory .bikeacc a {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+#shop .shopcontainer .shopbottom .features .bikecategory .bikeacc ul {
+  padding-left: 30px;
+  height: 20px;
+  display: none;
+}
+#shop .shopcontainer .shopbottom .features .bikecategory .bikeacc ul li {
+  list-style: disc;
+}
+#shop .shopcontainer .shopbottom .features .bestsellers {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#shop .shopcontainer .shopbottom .features .bestsellers h5 {
+  font-size: 25px;
+}
+#shop .shopcontainer .shopbottom .features .bestsellers img {
+  width: 100%;
+}
+#shop .shopcontainer .shopbottom .features .bestsellers a {
+  color: black;
+  font-size: 18px;
+}
+#shop .shopcontainer .shopbottom .features .bestsellers p {
+  font-size: 18px;
+  color: #ff004e;
+}
+#shop .shopcontainer .shopbottom .bikes {
+  width: 80%;
+}
+#shop .shopcontainer .shopbottom .bikes .sort {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .filterstyle {
+  width: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .filterstyle #listbutton1 {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .filterstyle #listbutton2 {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid black;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .filterstyle .listbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .filterstyle .listbutton .fa-table-cells {
+  color: red;
+  background-color: white;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .facesort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .facesort span {
+  margin-right: 20px;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .facesort .facefilterfield {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#shop .shopcontainer .shopbottom .bikes .sort .facesort .facefilterfield select {
+  background-color: transparent;
+}
+
+.featuresopener {
+  display: block !important;
+}
+
+#shopresponsive {
+  display: none;
+  right: 0;
+  min-width: 50%;
+  height: 88%;
+  background-color: #ebe7e2;
+}
+#shopresponsive .fa-xmark {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#shopresponsive .shopcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#shopresponsive .shopcontainer .selections {
+  padding-top: 20px;
+  width: 100%;
+  height: 30%;
+  padding-left: 20px;
+}
+#shopresponsive .shopcontainer .selections .inputs {
+  display: flex;
+  justify-content: space-between;
+}
+#shopresponsive .shopcontainer .selections .inputs input {
+  width: 30%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#shopresponsive .shopcontainer .selections .divs {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+#shopresponsive .shopcontainer .selections .divs i {
+  font-size: 20px;
+}
+#shopresponsive .shopcontainer .selections .divs a {
+  font-size: 20px;
+  color: black;
+}
+#shopresponsive .shopcontainer .selections .divs select {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-left: 20px;
+  width: 40%;
+  height: 100%;
+  font-size: 20px;
+}
+#shopresponsive .shopcontainer .responsivebuttons {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#shopresponsive .shopcontainer .responsivebuttons button {
+  width: 132px;
+  height: 36px;
+  transition: 0.5s;
+}
+#shopresponsive .shopcontainer .responsivebuttons button:hover {
+  transition: 0.5s;
+  background-color: black !important;
+  color: white !important;
+  cursor: pointer;
+}
+#shopresponsive .shopcontainer .responsivebuttons #button1 {
+  border: 2px solid black;
+  background-color: transparent;
+}
+#shopresponsive .shopcontainer .responsivebuttons #button2 {
+  background-color: #ff004e;
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 991px) {
+  #shopresponsive {
+    position: absolute;
+  }
+  .facesort h2 {
+    font-size: 20px;
+  }
+  .facesort span {
+    font-size: 15px;
+  }
+  .facesort select {
+    width: 100px;
+  }
+}
+.shopresponsiveopen {
+  display: block !important;
+}
+
+@media screen and (max-width: 750px) {
+  .features {
+    display: none !important;
+  }
+  .shophead {
+    font-size: 30px !important;
+  }
+  .sort {
+    display: none !important;
+  }
+  .rightfilter {
+    display: flex !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  #shopresponsive {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 630px) {
+  .shophead {
+    font-size: 18px !important;
+  }
+  .rightfilter {
+    font-size: 10px !important;
+  }
+  #shopresponsive a {
+    font-size: 15px !important;
+  }
+  #shopresponsive span {
+    font-size: 12px;
+  }
+  #shopresponsive i {
+    font-size: 15px !important;
+  }
+  #shopresponsive select {
+    width: 20% !important;
+    height: 50% !important;
+    font-size: 10px !important;
+  }
+  #shopresponsive .responsivebuttons button {
+    width: 60px !important;
+    height: 15px !important;
+    font-size: 10px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
