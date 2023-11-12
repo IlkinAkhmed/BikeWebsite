@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Basket</title>
 </head>
+
 <body>
     <!-- edited By Ali start -->
-
     <!-- header stared  -->
     <header>
-
         <!-- Ahmads Search Start-->
-
         <!-- Search Start -->
-
         <section id="search">
             <div class="searchbox">
                 <i class="fa-regular fa-circle-xmark"></i>
@@ -30,15 +30,10 @@
 
             </div>
         </section>
-
         <!-- Search End -->
-
         <!-- Ahmads Search End-->
-
         <div class="page_blur"></div>
-
         <!-- navbar started  -->
-
         <nav class="navbar_rider">
             <div class="logoAndBar">
                 <div>
@@ -68,22 +63,19 @@
                 </div>
             </div>
         </nav>
-
         <div class="line"></div>
-
         <!-- navbar end  -->
 
         <!-- hamburger clicked open navbar start  -->
-
         <nav class="click_bar">
             <div class="click_box">
                 <ul class="navbar_up">
-                    <li><a href="/assets/html/index.html" id="homePage">HOME</a></li>
-                    <li><a href="/assets/html/shop.html">SHOP</a></li>
-                    <li><a href="/assets/html/about.html">ABOUT</a></li>
-                    <li><a href="/assets/html/blog.html">BLOG</a></li>
-                    <li><a href="/assets/html/faq.html">FAQ</a></li>
-                    <li><a href="/assets/html/contact.html">CONTACT</a></li>
+                    <li><a href="index.html" id="homePage">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
                 <div class="nabar_down">
                     <div class="navbar_login"><a href="logIn.html">
@@ -102,21 +94,53 @@
         </nav>
 
         <!-- hamburger clicked open navbar end  -->
-
     </header>
-
     <!-- header end  -->
-
     <!-- edited By Ali end -->
 
 
-    <section id="about">
 
+    <!-- basket html page started by ilkin -->
+    <section id="basket">
+        <div class="head-of-basket">
+            <h1>Your Cart</h1>
+            <a href="shop.html">Continue Shopping
+                <div class="bottom-line"></div>
+            </a>
+        </div>
+        <div class="name-of-properties">
+            <div class="product-text">
+                <h2>PRODUCT</h2>
+            </div>
+            <div class="quant-and-total-text">
+                <h2 class="quantity">QUANTITY</h2>
+                <h2 class="total">TOTAL</h2>
+            </div>
+        </div>
+
+        <div class="basketWrapper">
+            
+        </div>
+        <div class="order">
+            <div class="order-area">
+                <label class="label">Order Special Instructions</label>
+                <textarea class="text-area" cols="20" rows="5"></textarea>
+            </div>
+            <div class="subtotal">
+                <p class="valueOfAllProducts"></p>
+                <b>Taxes and shipping calculated at checkout</b>
+                <button class="pink-button">Check Out</button>
+            </div>
+        </div>
     </section>
 
-    <!-- Ahmads Footer Start -->
 
-    <footer id="footer">
+
+    <!-- basket html page ended by ilkin -->
+
+
+    <!-- Ahmads Footer Start -->
+     <footer id="footer">
         <div class="footertop">
             <div class="footerbox">
                 <h6 class="h6text">Our Locations
@@ -168,7 +192,7 @@
                 <div class="doublefooter">
                     <h6 class="h6text">Get In Touch</h6>
                     <ul>
-                        <li >No: 58 A, East Madison Street, Baltimore, MD, USA 4508
+                        <li>No: 58 A, East Madison Street, Baltimore, MD, USA 4508
                         </li>
                         <li>123456789
                         </li>
@@ -179,7 +203,10 @@
                     <h6 class="h6text">Subscribe Newsletter
                     </h6>
                     <div class="inputsfooter">
-                        <input type="text"><button>Subscribe <i class="fa-solid fa-location-arrow"></i></button>
+                        <input type="text">
+                        <button>Subscribe 
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -208,9 +235,12 @@
             </div>
         </div>
 
-    </footer>
-    
+    </footer> 
     <!-- Ahmads Footer End -->
-    <script src="/assets/js/script.js"></script>
+
+
+
+    <script src="/assets/js/basket.js"></script>
 </body>
+
 </html>

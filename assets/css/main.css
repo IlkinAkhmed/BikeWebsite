@@ -806,26 +806,7 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   color: black;
   position: relative;
 }
-#basket .head-of-basket a .contactbox {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  height: fit-content;
-}
-#basket .head-of-basket a .contactbox .contactcards {
-  padding: 25px;
-  height: 180px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#basket .head-of-basket a .contactbox .contactcards .bottom-line {
+#basket .head-of-basket a .bottom-line {
   position: absolute;
   bottom: -5px;
   width: 100%;
@@ -833,34 +814,34 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   background-color: black;
   transition: 0.5s;
 }
-#basket .head-of-basket a .contactbox .contactcards:hover .bottom-line {
+#basket .head-of-basket a:hover .bottom-line {
   width: 30%;
   transition: 1s;
 }
-#basket .head-of-basket a .name-of-properties {
+#basket .name-of-properties {
   display: flex;
   padding: 20px 30px;
 }
-#basket .head-of-basket a .name-of-properties .product-text {
+#basket .name-of-properties .product-text {
   width: 60%;
 }
-#basket .head-of-basket a .name-of-properties .product-text h2 {
+#basket .name-of-properties .product-text h2 {
   color: rgb(48, 47, 47);
 }
-#basket .head-of-basket a .name-of-properties .quant-and-total-text {
+#basket .name-of-properties .quant-and-total-text {
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
-#basket .head-of-basket a .name-of-properties .quant-and-total-text h2 {
+#basket .name-of-properties .quant-and-total-text h2 {
   color: rgb(48, 47, 47);
 }
-#basket .head-of-basket a .basketWrapper {
+#basket .basketWrapper {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-#basket .head-of-basket a .basketWrapper .basketCard {
+#basket .basketWrapper .basketCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -868,25 +849,25 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   min-height: 80%;
   width: 100%;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product {
+#basket .basketWrapper .basketCard .product {
   width: 75%;
   display: flex;
   gap: 60px;
   align-items: flex-start;
   justify-content: space-between;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .image-and-properties {
+#basket .basketWrapper .basketCard .product .image-and-properties {
   width: 35%;
   display: flex;
   justify-content: space-between;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .image-and-properties .image {
+#basket .basketWrapper .basketCard .product .image-and-properties .image {
   width: 45%;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .image-and-properties .image img {
+#basket .basketWrapper .basketCard .product .image-and-properties .image img {
   width: 100%;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .image-and-properties .prod-properties {
+#basket .basketWrapper .basketCard .product .image-and-properties .prod-properties {
   padding: 40px 0;
   width: 55%;
   height: 200px;
@@ -895,16 +876,16 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   flex-direction: column;
   gap: 20px;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .image-and-properties .prod-properties .type {
+#basket .basketWrapper .basketCard .product .image-and-properties .prod-properties .type {
   font-size: 13px;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .countAndRemove {
+#basket .basketWrapper .basketCard .product .countAndRemove {
   display: flex;
   align-items: center;
   gap: 20px;
   width: 20%;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .countAndRemove .count {
+#basket .basketWrapper .basketCard .product .countAndRemove .count {
   height: 50px;
   width: 130px;
   display: flex;
@@ -912,53 +893,53 @@ header .navbar_rider .navbar_basket:hover .basket_number {
   justify-content: space-around;
   border: 2px solid black;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .countAndRemove .count p {
+#basket .basketWrapper .basketCard .product .countAndRemove .count p {
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .countAndRemove .fa-trash-can {
+#basket .basketWrapper .basketCard .product .countAndRemove .fa-trash-can {
   cursor: pointer;
   transition: 0.5s;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .product .countAndRemove .fa-trash-can:hover {
+#basket .basketWrapper .basketCard .product .countAndRemove .fa-trash-can:hover {
   transform: scale(1.5);
   transition: 0.5s;
 }
-#basket .head-of-basket a .basketWrapper .basketCard .total-price {
+#basket .basketWrapper .basketCard .total-price {
   height: 200px;
   width: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
-#basket .head-of-basket a .order {
+#basket .order {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 100px 0 0 0;
 }
-#basket .head-of-basket a .order .order-area {
+#basket .order .order-area {
   width: 25%;
 }
-#basket .head-of-basket a .order .order-area .label {
+#basket .order .order-area .label {
   margin-bottom: 20px;
   color: rgb(70, 70, 70);
   font-weight: bold;
 }
-#basket .head-of-basket a .order .order-area .text-area {
+#basket .order .order-area .text-area {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgb(70, 70, 70);
 }
-#basket .head-of-basket a .order .subtotal {
+#basket .order .subtotal {
   width: 25%;
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: flex-end;
 }
-#basket .head-of-basket a .order .subtotal .pink-button {
+#basket .order .subtotal .pink-button {
   width: 100%;
 }
 

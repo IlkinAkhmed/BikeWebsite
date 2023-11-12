@@ -89,99 +89,99 @@ html {
                         width: 60%;
                         padding: 50px 100px 50px 0;
                         backdrop-filter: blur(10px);
-                      
-                        }
-                        
-                    
-
-
-                        :first-child {
-                            font-size: 15px;
-                            color: #ff004e;
-                            font-family: var(--font-body-family);
-                        }
-
-                        h1 {
-                            font-family: 'Quantico', serif;
-                            font-weight: bold;
-                            margin: 30px 0;
-                        }
-
-                        :nth-child(3) {
-                            width: 60%;
-                            font-family: 'Gruppo', sans-serif;
-                        }
 
                     }
 
-                    .number {
-                        width: 10%;
-                        height: 50px;
-                        position: relative;
-                        transform: rotate(90deg);
-                        margin-left: 40px;
 
-                        .number-of-image {
-                            display: flex;
-                            justify-content: space-between;
+
+
+                    :first-child {
+                        font-size: 15px;
+                        color: #ff004e;
+                        font-family: var(--font-body-family);
+                    }
+
+                    h1 {
+                        font-family: 'Quantico', serif;
+                        font-weight: bold;
+                        margin: 30px 0;
+                    }
+
+                    :nth-child(3) {
+                        width: 60%;
+                        font-family: 'Gruppo', sans-serif;
+                    }
+
+                }
+
+                .number {
+                    width: 10%;
+                    height: 50px;
+                    position: relative;
+                    transform: rotate(90deg);
+                    margin-left: 40px;
+
+                    .number-of-image {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    hr {
+                        bottom: -4px;
+                        position: absolute;
+                        height: 1px;
+                        width: 100%;
+                        background-color: rgb(57, 57, 57);
+                    }
+
+                }
+            }
+
+            .properties {
+                width: 100%;
+                height: 20%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+
+
+
+                .letters {
+                    width: 200px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    span,
+                    i {
+                        font-size: 20px;
+                        color: rgb(0, 0, 0);
+                        padding: 5px;
+                        transition: 0.5s;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgb(192, 191, 191);
+                            transition: 0.5s;
                         }
-
-                        hr {
-                            bottom: -4px;
-                            position: absolute;
-                            height: 1px;
-                            width: 100%;
-                            background-color: rgb(57, 57, 57);
-                        }
-
                     }
                 }
 
-                .properties {
-                    width: 100%;
-                    height: 20%;
-                    margin: auto;
-                    display: flex;
-                    justify-content: space-between;
-
-
-
-                    .letters {
-                        width: 200px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-
-                        span,
-                        i {
-                            font-size: 20px;
-                            color: rgb(0, 0, 0);
-                            padding: 5px;
-                            transition: 0.5s;
-                            border-radius: 5px;
-                            cursor: pointer;
-
-                            &:hover {
-                                background-color: rgb(192, 191, 191);
-                                transition: 0.5s;
-                            }
-                        }
-                    }
-
-                    .name-of-bike {
-                        background-color: #ff004e;
-                        width: 300px;
-                        padding: 30px;
-                        color: white;
-                        box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
-                        -webkit-box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
-                        -moz-box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
-                    }
+                .name-of-bike {
+                    background-color: #ff004e;
+                    width: 300px;
+                    padding: 30px;
+                    color: white;
+                    box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
+                    -webkit-box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
+                    -moz-box-shadow: -5px -4px 65px 29px rgba(0, 0, 0, 0.37);
                 }
             }
         }
-
     }
+
+}
 
 
 // style for home section by ilkin end
@@ -2227,21 +2227,23 @@ html {
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
-                    .eBriss_line{
-                    height: 2px;
-                    width: 80px;
-                    background-color: black;
-                    transition: 0.6s;
 
+                    .eBriss_line {
+                        height: 2px;
+                        width: 80px;
+                        background-color: black;
+                        transition: 0.6s;
+
+                    }
                 }
-                }
-                .velo_text_btn:hover{
-                    .eBriss_line{
+
+                .velo_text_btn:hover {
+                    .eBriss_line {
                         width: 20px;
                         transition: 0.6s;
                     }
                 }
-                
+
 
             }
         }
