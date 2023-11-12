@@ -1,3 +1,6 @@
+// style for basket section start by Ahmad
+
+
 * {
     list-style-type: none;
     text-decoration: none;
@@ -25,6 +28,8 @@
         a {
             color: black;
             position: relative;
+            font-size: 20px;
+            font-weight: bold;
 
             .bottom-line {
                 position: absolute;
@@ -34,10 +39,14 @@
                 background-color: black;
                 transition: 0.5s;
             }
-
+            &:hover{
+                color: #ff004e;
+                transition: 0.5s;
+            }
             &:hover .bottom-line {
                 width: 30%;
-                transition: 1s;
+                transition: 0.5s;
+                background-color: #ff004e;
             }
         }
     }
@@ -159,6 +168,7 @@
         }
     }
 
+
     .order {
         display: flex;
         justify-content: space-between;
@@ -187,6 +197,10 @@
             gap: 20px;
             flex-direction: column;
             align-items: flex-end;
+            .valueOfAllProducts{
+                font-weight: bold;
+                font-size: 20px;
+            }
 
             .pink-button {
                 width: 100%;
@@ -269,3 +283,6 @@
         }
     }
 }
+
+
+// style for basket section end by Ahmad

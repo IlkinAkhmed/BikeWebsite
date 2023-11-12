@@ -2,8 +2,9 @@
 .pink-button{
     padding: 10px 15px;
     background-color: #ff004e;
-    color: white;   
+    color: white!important;   
     transition: 0.5s;
+    border-color: #ff004e;
     width: 150px;
 
     cursor: pointer;
@@ -11,7 +12,7 @@
     font-weight: bold;
     &:hover{
         background-color: black;
-        color: white;
+        color: white!important;
         border-color: black;
         transition: 0.5s;
     }
@@ -28,7 +29,7 @@
     width: 150px;
     &:hover{
         background-color: black;
-        color: white;
+        color: white!important;
         border-color: black;
         transition: 0.5s;
     }

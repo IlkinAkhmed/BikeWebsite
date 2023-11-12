@@ -1,0 +1,149 @@
+
+// style for about section start by Ahmad
+#about {
+    padding-top: 80px;
+    width: 100%;
+    height: 250vh;
+    background-color: #e5e2d8;
+
+    .unmatchable {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .unmatchableboxes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 50%;
+            .unmatchablebox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    color: #ff004e;
+                    font-size: 40px;
+                }
+                h5{
+                    font-size: 30px;
+                }
+            }
+        }
+        .unmatchabletext {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 25%;
+            padding-left: 40px;
+            h2{
+                font-size: 50px;
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    .aboutbox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h1 {
+            font-size: 60px;
+            padding-left: 40px;
+        }
+
+        .aboutplayer {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            background-image: url(https://dt-ezyrider.myshopify.com/cdn/shop/files/abo-4.jpg?v=1676705464&width=1100);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .videoopener {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ff004e;
+                color: white;
+                font-size: 25px;
+                cursor: pointer;
+
+
+            }
+
+            .video {
+                background-color: white;
+                padding: 40px;
+                display: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 10px;
+
+                .videobox {
+                    position: relative;
+                }
+
+                .closerdiv {
+
+                    // position: relative;
+                    i {
+                        color: #ff004e;
+                        font-size: 30px;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.videoopening {
+    display: block !important;
+}
+@media screen and (max-width: 750px) {
+    .unmatchabletext {
+        h2{
+            font-size: 30px !important;
+        }
+        p {
+            font-size: 10px !important;
+        }
+
+    }
+    .unmatchablebox{
+        img{
+            width: 50%;
+        }
+        span{
+            font-size: 20px !important;
+        }
+        h5{
+            font-size: 15px !important;
+        }
+    }
+}
+
+// style for about section end by Ahmad

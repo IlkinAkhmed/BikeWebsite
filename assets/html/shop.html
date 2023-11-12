@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon"
+    href="https://dt-ezyrider.myshopify.com/cdn/shop/files/Group_71-new.png?crop=center&height=32&v=1669109340&width=32"
+    type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Shop</title>
 </head>
 
-<body>
+<body id="body">
     <!-- edited By Ali start -->
 
     <!-- header stared  -->
@@ -65,7 +73,7 @@
                     <a href="/assets/html/basket.html">
                         <i class="fa-solid fa-bag-shopping"></i>
                     </a>
-                    <p class="basket_number">3</p>
+                    <p class="basket_number">0</p>
 
                 </div>
             </div>
@@ -149,18 +157,19 @@
 
     <section id="shop">
         <div class="shopcontainer">
+            <div class="rightfilter">
+                <div id="filterandsort">
+                    <i class="fa-solid fa-filter"></i>
+                    <span>Filter and sort</span>
+                </div>
+                <span>13 products</span>
+            </div>
             <div class="shophead">
                 <h1>Products</h1>
             </div>
             <div class="shopbottom">
                 <!-- ////////////////////////////////////////////////////////////////////-->
-                <div class="rightfilter">
-                    <div id="filterandsort">
-                        <i class="fa-solid fa-filter"></i>
-                        <span>Filter and sort</span>
-                    </div>
-                    <span>13 products</span>
-                </div>
+
                 <!-- ////////////////////////////////////////////////////////////////////-->
                 <div class="features">
                     <div class="filterarea">
@@ -248,9 +257,48 @@
                             <span>13 products</span>
                         </div>
                     </div>
+
+                    <!-- shop section start by ILKIN -->
+
                     <div class="for-sale">
 
                     </div>
+
+                    <div class="details">
+                        <i class="fa-regular fa-rectangle-xmark"></i>
+                        <div class="details-inner">
+                            <div class="details-image">
+                                <img id="details-prod-img" src="" alt="">
+                            </div>
+                            <div class="properties">
+                                <h1 class="details-name"></h1>
+                                <p class="details-price"></p>
+                                <p>Color</p>
+                                <select>
+                                    <option class="details-color"></option>
+                                </select>
+                                <p>Power</p>
+                                <select>
+                                    <option class="details-power"></option>
+                                </select>
+                                <p>Weight-Limit</p>
+                                <select>
+                                    <option class="details-weight"></option>
+                                </select>
+                                <div class="buttons">
+                                    <button class="white-button addToCart">Add To Cart</button>
+                                    <button class="white-button">View wishlist</button>
+                                </div>
+                                <a href="/assets/html/buy.html">
+                                    <button class="pink-button">Buy it now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- shop section end by ILKIN -->
+
+                    <div class="background-div"></div>
                 </div>
             </div>
         </div>
@@ -358,6 +406,7 @@
     <!-- Ahmads Footer End -->
 
     <script src="/assets/js/basket.js"></script>
+    <script src="/assets/js/script.js"></script>
     <script src="/assets/js/shop.js"></script>
 </body>
 

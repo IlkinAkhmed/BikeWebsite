@@ -1,3 +1,7 @@
+
+
+// js for blog section start by Ali
+
 const orderBtn=document.querySelector('.order')
 const orderSubmenu=document.querySelector('.order_submenu')
 const orderText=document.querySelector('.order_text')
@@ -52,3 +56,5 @@ successBtn.addEventListener('click',()=>{
     successText.classList.toggle('successOpenTxt');
     successSubmenu.classList.toggle('successOpen')  
 })
+
+// js for blog section end by Ali

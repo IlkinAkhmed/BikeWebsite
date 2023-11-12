@@ -1,0 +1,162 @@
+// style for buy section start by Ali
+
+#buy{
+    background-color: #DAD3C6;
+    max-width: 100%;
+    min-height: 100vh;
+   display: flex;
+   position: relative;
+   #exit{
+    position: absolute;
+    font-size: 30px;
+    top: 30px;
+    left:50px;
+    color: #ff004e;
+    cursor: pointer;
+   }
+   #goBasket{
+    position: absolute;
+    font-size: 30px;
+    top: 30px;
+    right:50px;
+    color: #ff004e;
+    cursor: pointer;
+   }
+   input{
+    border: none;
+   }
+   select{
+    border: none;
+
+   }
+    .contact{
+        min-width: 50%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contact_box{
+            padding: 30px;
+           
+        #contact_input{
+            min-width: 90%;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 10px 0px;
+        }
+        .contact_of{
+            display: flex;
+            gap: 10px;
+            #checkbox{
+                width: 20px;
+                accent-color: #ff004e;
+            }
+        }
+        .delivery_box{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            #delivery_country{
+                max-width: 90%;
+                padding: 15px 20px;
+                border-radius: 5px;
+                margin: 10px 0px;
+                
+            }
+            .names{
+                margin-top: 10px;
+                input{
+                    min-width: 44.6%;
+                    padding: 15px 20px;
+                    border-radius: 5px;
+    
+                }
+            }
+           #address_input{
+            max-width: 90%;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 10px 0px;
+           }
+        }
+       }
+        
+       
+        .city{
+            margin-top: 10px;
+    
+            input{
+                max-width: 29.6%;
+                padding: 15px 20px;
+                border-radius: 5px;
+               
+            }
+            select{
+                min-width: 29.6%;
+                padding: 15px 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+     .payment{
+            background-color: white;
+            min-width: 50%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            border: 2px solid #DAD3C6;
+        }
+            .payment_box{
+                padding: 30px;
+                min-width: 85%;
+                .credit_box{
+                    p{
+                        margin-top: 20px;
+                        font-size: 20px;
+                    }
+                    #number_box{
+                        margin-top: 10px;
+                        width: 90%;
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+                    .code_box{
+                        input{
+                            width: 44.6%;
+                            padding: 15px 20px;
+                            border-radius: 5px;
+                        }
+                    }
+                    #cardName{
+                        margin-top: 10px;
+                        width: 90%;
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+                   
+                }
+            }
+            .payment_btn{
+                background-color: #ff004e;
+                padding: 20px;
+                width: 90%;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        
+        }
+}
+@media only screen and (max-width: 1032px) {
+    #buy{
+       flex-direction: column;
+    }
+}
+
+// style for buy section start by Ali

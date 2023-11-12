@@ -118,9 +118,7 @@
             }
 
             ul {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                line-height: 2;
 
                 li {
                     a {
@@ -154,6 +152,7 @@
             height: 100%;
             width: 90%;
             display: flex;
+
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;

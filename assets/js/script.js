@@ -1,3 +1,22 @@
+// Open and Close Search start
+const Search = document.getElementById("search")
+const opensearch = document.getElementById("opensearch")
+const exitsearch = document.querySelector(".fa-circle-xmark")
+
+opensearch.addEventListener("click", function (e) {
+  e.preventDefault()
+  Search.classList.add("active")
+})
+
+exitsearch.addEventListener("click", function () {
+  Search.classList.remove("active")
+})
+// Open and Close Search end
+
+
+
+
+
 // edited By Ali start
 
 // hamburger clicked open navbar start
@@ -14,13 +33,18 @@ barIcon.addEventListener('click', () => {
   blurPage.style.display = 'block'
 
 })
-closeIcon.addEventListener('click', () => {
-  clickBar.style.display = 'none'
-  barIcon.style.display = 'block'
-  closeIcon.style.display = 'none'
-  blurPage.style.display = 'none'
 
-})
+
+window.onclick = (e) => {
+  if (e.target === closeIcon || e.target === blurPage) {
+
+    clickBar.style.display = 'none'
+    barIcon.style.display = 'block'
+    closeIcon.style.display = 'none'
+    blurPage.style.display = 'none'
+  }
+}
+
 // hamburger clicked open navbar end
 // search line start 
 const SearchInput = document.querySelector('.navbar_search')
@@ -67,6 +91,21 @@ window.addEventListener("resize", e => (width = slide.offsetWidth));
 
 
 // accessories section by ilkin end
+
+
+
+// back to up script start by Ahmad
+
+const scrollUpButton = document.getElementById('scroll');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollUpButton.classList.add("active")
+  } else {
+    scrollUpButton.classList.remove("active")
+  }
+});
+// back to up script end by Ahmad
 
 
 
@@ -176,18 +215,5 @@ window.addEventListener("resize", e => (width = carousel1.offsetWidth));
 
 // ----------------------------------------------
 // Ahmad Edited Start
-// Open and Close Search start
-const Search = document.getElementById("search")
-const opensearch = document.getElementById("opensearch")
-const exitsearch = document.querySelector(".fa-circle-xmark")
 
-opensearch.addEventListener("click", function (e) {
-  e.preventDefault()
-  Search.classList.add("active")
-})
-
-exitsearch.addEventListener("click", function () {
-  Search.classList.remove("active")
-})
-// Open and Close Search end
 // Ahmad Edited End

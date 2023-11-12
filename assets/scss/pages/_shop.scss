@@ -1,3 +1,6 @@
+
+// style for shop section start by Ahmad and Ilkin
+
 #shop {
     padding: 100px 0;
     width: 100%;
@@ -6,14 +9,47 @@
     display: flex;
     justify-content: center;
     background-color: #e5e2d8;
+    font-family: Arial, Helvetica, sans-serif;
 
     .shopcontainer {
+        height: 100%;
+        min-height: 1000px;
         width: 95%;
         display: flex;
         flex-direction: column;
 
+        .rightfilter {
+            display: none;
+            width: 100%;
+            height: 5%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+
+            #filterandsort {
+                width: 18%;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0;
+            }
+
+            #filterandsort:hover {
+                cursor: pointer;
+
+                i {
+                    color: #ff004e;
+                }
+
+                span {
+                    text-decoration: underline;
+                    color: #ff004e;
+                }
+            }
+        }
+
         .shophead {
-            font-size: 50px;
+            font-size: 40px;
+            padding: 20px;
             height: 8%;
         }
 
@@ -22,37 +58,10 @@
             justify-content: space-between;
             height: 90%;
 
-            .rightfilter {
-                display: none;
-                width: 60%;
-                height: 5%;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 15px;
-
-                #filterandsort {
-                    width: 40%;
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                #filterandsort:hover {
-                    cursor: pointer;
-
-                    i {
-                        color: #ff004e;
-                    }
-
-                    span {
-                        text-decoration: underline;
-                        color: #ff004e;
-                    }
-                }
-            }
-
             .features {
                 width: 20%;
                 height: 75%;
+                line-height: 2;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -183,7 +192,7 @@
             }
 
             .bikes {
-                width: 80%;
+                // width: 80%;
                 height: 100%;
                 min-height: 1000px;
 
@@ -261,7 +270,8 @@
                     gap: 15px;
 
                     .shopCard {
-                        width: 30%;
+                        // width: 30%;
+                        // max-width: 30%;
                         height: 350px;
                         padding: 30px;
                         background-color: #e5e2d8;
@@ -330,6 +340,103 @@
                     }
                 }
 
+                .details {
+                    width: 70%;
+                    height: 500px;
+                    margin: auto;
+                    padding: 20px 50px;
+                    position: fixed;
+                    background-color: #ebe7e2;
+                    top: 20%;
+                    left: 15%;
+                    z-index: 5;
+                    border-radius: 10px;
+                    overflow-y: scroll;
+                    display: none;
+                    font-family: 'Source Code Pro', monospace;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+                    .details-inner {
+                        width: 90%;
+                        margin: auto;
+                        display: flex;
+
+                        .details-image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .properties {
+                            font-weight: bold;
+                            line-height: 2;
+
+                            .details-name {
+                                font-size: 40px;
+                            }
+
+                            .details-price {
+                                color: #ff004e;
+                                font-size: 35px;
+                            }
+
+                            select {
+                                width: 100px;
+                                border: none;
+                                font-weight: bold;
+                                border-bottom: 1px solid black;
+                                background-color: transparent;
+                                margin: 20px 0;
+                            }
+
+                            p {
+                                font-size: 20px;
+                            }
+
+                            .details-quantity {
+                                border: 2px solid black;
+                                width: 150px;
+                                display: flex;
+                                justify-content: space-around;
+                                cursor: pointer;
+
+                            }
+
+                            .white-button {
+                                margin: 20px 0;
+                            }
+
+                            .pink-button {
+                                width: 310px;
+                            }
+                        }
+                    }
+
+                    .fa-rectangle-xmark {
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        font-size: 30px;
+                        color: #ff004e;
+                        cursor: pointer;
+                    }
+                }
+                .background-div{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: black;
+                    opacity: 0.3;
+                    z-index: 0;
+                    display: none;
+
+                }
+
+
             }
         }
     }
@@ -345,16 +452,20 @@
 #shopresponsive {
     display: none;
     right: 0;
-    min-width: 50%;
-    height: 88%;
+    top: 0;
+    height: 100vh;
+    padding: 20px 20px;
     background-color: #ebe7e2;
+    z-index: 5;
+    position: fixed;
+    font-family: var(--font-heading-family);
 
-    // background-color: white;
     .fa-xmark {
         position: absolute;
         right: 10px;
         top: 10px;
     }
+
     .shopcontainer {
         width: 100%;
         height: 100%;
@@ -445,10 +556,10 @@
     }
 }
 
-@media screen and (max-width: 991px) {
-    #shopresponsive {
-        position: absolute;
-    }
+@media screen and (max-width: 998px) {
+    // #shopresponsive {
+    //     position: absolute;
+    // }
 
     .facesort {
         h2 {
@@ -472,6 +583,7 @@
 @media screen and (max-width: 750px) {
     .features {
         display: none !important;
+        width: 100%;
     }
 
     .shophead {
@@ -533,84 +645,71 @@
     }
 }
 
-.featuresopener {
-    display: block !important;
-}
+@media screen and (max-width: 568px) {
+    .shopbottom {
 
-.for-sale {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: fit-content;
-    min-height: 1000px;
-    gap: 15px;
-
-    .shopCard {
-        width: 30%;
-        height: 350px;
-        padding: 30px;
-        background-color: #e5e2d8;
-        border-radius: 10px;
-        position: relative;
-
-        .image {
-            height: 80%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .card-body {
-            padding: 0 50px;
-            height: 20%;
+        .bikes {
             width: 100%;
-            // line-height: 2;
-            font-size: 15px;
+            text-align: center;
 
+            .for-sale {
+                flex-wrap: wrap;
 
-            .rating {
-                color: gold;
-                display: flex;
-                gap: 5px;
-            }
-
-            p {
-                color: #ff004e;
-                // font-weight: bold;
-            }
-        }
-
-        .product-icons {
-            display: flex;
-            gap: 20px;
-            position: absolute;
-            top: 40px;
-            left: 60px;
-            opacity: 0;
-            transition: 0.5s;
-
-            i {
-                cursor: pointer;
-                font-size: 25px;
-                padding: 10px;
-                color: white;
-                background-color: #ff004e;
-                border-radius: 50%;
-                transition: 0.5s;
-
-                &:hover {
-                    background-color: white;
-                    color: #ff004e;
-                    transition: 0.5s;
+                .shopCard {
+                    max-width: 100%;
                 }
             }
         }
-
-        &:hover .product-icons {
-            opacity: 1;
-            transform: translateY(20px);
-        }
-
     }
 }
+
+@media screen and (min-width: 569px) and (max-width: 767px) {
+    .bikes {
+        width: 100%;
+
+        .shopCard {
+            width: 47%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .shopbottom {
+        flex-wrap: wrap;
+
+        .rightfilter {
+            width: 100%;
+        }
+
+        .bikes {
+            width: 80%;
+            text-align: center;
+
+            .for-sale {
+                flex-wrap: wrap;
+
+                .shopCard {
+                    width: 47%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .bikes {
+        width: 80%;
+
+        .for-sale {
+            flex-wrap: wrap;
+
+            .shopCard {
+                max-width: 30%;
+            }
+        }
+    }
+
+}
+
+// style for shop section end by Ahmad and Ilkin

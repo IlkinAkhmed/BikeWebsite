@@ -118,3 +118,18 @@ fopenerthree.addEventListener("click", function (e) {
 // Ahmad Edited End
 
 
+// Ahmad shop responsive start
+
+const shopresponsive = document.getElementById("shopresponsive")
+const filterandsort = document.getElementById("filterandsort")
+const shopresdelete = document.querySelector(".fa-xmark")
+
+filterandsort.addEventListener("click",function(){
+  shopresponsive.classList.toggle("shopresponsiveopen")
+})
+shopresdelete.addEventListener("click",function(){
+  shopresponsive.classList.remove("shopresponsiveopen")
+})
+// Ahmad shop responsive end
+
+

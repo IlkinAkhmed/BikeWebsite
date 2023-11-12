@@ -134,7 +134,7 @@ header {
                 border-radius: 20px;
                 color: #ff004e;
                 position: absolute;
-                bottom: 3px;
+                bottom: 18px;
                 left: 0px;
                 display: flex;
                 justify-content: center;
@@ -256,16 +256,13 @@ header {
             display: flex;
             flex-direction: column;
             line-height: 3;
-
-            #homePage {
-                color: #ff004e;
-            }
-
             li {
                 cursor: pointer;
+                width: 100%;
 
                 a {
                     color: rgb(85, 82, 82);
+                    padding: 0 200px 0 0;
                 }
             }
 
